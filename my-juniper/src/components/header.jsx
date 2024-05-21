@@ -16,7 +16,7 @@ function Header() {
 
             {/* Logo do header home principal */}
             <figure name="logoh" class="flex items-center">
-                <img class="h-[113px]" src={Logo }/>
+                <img class="h-28" src={Logo }/>
             </figure>
             
             {/* Div do select, input e login */}
@@ -46,7 +46,7 @@ function Header() {
                 </form>
                 
                 {/* Div específica do input pesquisar e button */}
-                <div name="pesquisah" class="flex space-x-4 items-center">
+                <div name="pesquisah" class="flex space-x-2 items-center">
                     <input type="text" class="bg-[#FFFCFC] border border-[#C0C0C0] rounded-md w-[280px] px-4 h-11 text-[#757575]" placeholder="Pesquisar.."/>
                     <button class="bg-[#E68C3A] w-[74px] h-[41px] rounded-md" type="pheader">
                         <figure> <img class="h-[22px] px-[24px]" src={Buscar }/></figure>
@@ -54,14 +54,10 @@ function Header() {
                 </div>
                 
                 {/* ícone de login */}
-                <a
-                    class="bg-[#FFFCFC] border border-[#C0C0C0] rounded-md h-[44px] w-[180px]  flex justify-center items-center space-x-4 "
+                <a class="bg-[#FFFCFC] border border-[#C0C0C0] rounded-md h-[44px] w-[180px]  flex justify-center items-center space-x-4 "
                     href>
-                    <span class="text-[#535353] font-medium">Área de
-                        Login</span>
-
-                   <figure> <img class="h-[38px]" src={User}/>
-                    </figure> 
+                    <span class="text-[#535353] font-medium">Área de Login</span>
+                   <figure> <img class="h-[38px]" src={User}/> </figure> 
                 </a>
             </div>
 
