@@ -1,4 +1,4 @@
-import React from "react";
+import React from "react"
 import Setad from '../assets/img_icon/setad.png'
 
 
