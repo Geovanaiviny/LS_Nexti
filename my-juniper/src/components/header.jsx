@@ -3,6 +3,9 @@ import Logo from "../assets/img/logoh.png"
 
 import Buscar from '../assets/img_icon/buscar.png'
 import User from '../assets/img_icon/user.png'
+// import Select from '../components_options/Select'
+import Select from '../componentes_options/Select';
+
 
 
 function Header() {
@@ -22,27 +25,15 @@ function Header() {
             {/* Div do select, input e login */}
             <div name="area" class="flex justify-center  items-center space-x-16">
 
-               
-
-                {/* <style>
-                    select {
-                        -webkit-appearance: none;
-                        -moz-appearance: none;
-                        appearance: none;
-                        background-image: url(/plsn/iconimg/setahe.png);
-                        background-repeat: no-repeat;
-                        background-position: right center;
-                        background-size: 26px;
-                        padding-left: 20px;}
-                </style> */}
                 
                 <form action method="get">
-                    <select class="bg-[#FFFCFC] border border-[#C0C0C0] rounded-md w-[280px] px-4 h-11 text-[#757575] custom-select">
+                    <Select />
+                    {/* <select class="bg-[#FFFCFC] border border-[#C0C0C0] rounded-md w-[280px] px-4 h-11 text-[#757575] custom-select">
                         <option class="text-gray-300" selected="selh_p">Áreas de busca</option>
                         <option value="selh_1">Enfermagem</option>
                         <option value="selh_2">Arquitetura</option>
                         <option value="selh_3">Sistemas</option>
-                    </select>
+                    </select> */}
                 </form>
                 
                 {/* Div específica do input pesquisar e button */}
