@@ -29,7 +29,7 @@ function Header() {
                 
                 {/* Div específica do input pesquisar e button */}
                 <div name="pesquisah" className="flex space-x-2 items-center">
-                    <input type="text" className="bg-[#FFFCFC] border border-[#C0C0C0] rounded-md w-[280px] px-4 h-11 text-[#757575]" placeholder="Pesquisar.."/>
+                    <input type="text" className="bg-[#FFFCFC] border border-[#C0C0C0] rounded-md w-[280px] px-4 h-11 font-worksans text-base" placeholder="Pesquisar.."/>
                     <button className="bg-[#E68C3A] w-[74px] h-[41px] rounded-md" type="pheader">
                         <figure> <img className="h-[22px] px-[24px]" src={Buscar }/></figure>
                     </button>
