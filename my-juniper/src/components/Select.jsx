@@ -71,7 +71,7 @@ export default function CustomizedMenus() {
       <Button
         sx={{ 
             background: '#FFFCFC',
-            height: '40px',
+            height: '44px',
             width: '260px',
             border: '1px solid #C0C0C0',
             color: '#A9A9A9',

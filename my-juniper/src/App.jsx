@@ -1,20 +1,23 @@
 import { useState } from 'react'
 import React from 'react'
 // import User from '../src/assets/img_icon/user.png'
-import Header from '../src/components/header.jsx';
+import Header from './components/header.jsx';
+import Body from './components/body.jsx';
 
 // import Select from './componentes_options/Select.jsx';
 
 
-function App() {
-    
 
+
+
+function App() {
   return (
-    <>
-        <Header />
-        
-       
-    </>
+  <>
+  <div className="bg-[#E68C3A] min-h-screen">
+    <Header />
+    <Body />
+  </div>
+  </>
     
   )
 }
