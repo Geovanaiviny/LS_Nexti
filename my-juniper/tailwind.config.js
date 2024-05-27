@@ -7,7 +7,8 @@ export default {
   theme: {
     extend: {
       fontFamily: {
-        worksans: ['Work Sans', 'sans-serif']
+        worksans: ['Work Sans', 'sans-serif'],
+        robotoserif: ['Roboto Serif', 'serif']
       }
     },
   },

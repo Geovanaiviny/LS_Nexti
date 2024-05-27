@@ -13,7 +13,7 @@ import Body from './components/body.jsx';
 function App() {
   return (
   <>
-  <div className="bg-[#E68C3A] min-h-screen">
+  <div className="bg-[#F4F2EF] min-h-screen">
     <Header />
     <Body />
   </div>
