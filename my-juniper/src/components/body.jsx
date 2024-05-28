@@ -3,8 +3,9 @@ import React from "react";
 import Bannerh from '../assets/img/bannerh.png.png'
 //import Header from "./header";
 
-import Hestante from '../assets/img/hestante.jpg'
 import Boxpublique from "./boxpublique";
+import Boxestante from "./boxestante";
+import Boxavaliacao from "./boxavaliacao";
 
 export default function Body(){
     return(
@@ -16,20 +17,25 @@ export default function Body(){
             </figure>
         </div>
 
-        
+        {/* Imagem para autores publicarem */}
+        {/* Imagem para ir a Estante */}
 
-        <div className="flex justify-center //justify-around space-x-[18rem] mt-10 ">
-            {/* Imagem para autores publicarem */}
+        <div className="flex justify-center //justify-around space-x-[3.2rem] mt-10 ">
             <div>
                 <Boxpublique />
             </div>
-            {/* Imagem para ir a Estante */}
-            <div className="flex">
-                <figure className="">
-                    <img className="w-[28rem] h-[25rem] rounded-md shadow-[0px_1px_4px_1px_rgba(0,0,0,0.3)] shadow-[#8d8d8d]" src={Hestante} alt="" />
-                </figure>
+
+            <div>
+                <Boxavaliacao />
             </div>
+
+            <div className="flex">
+                <Boxestante />
+            </div>
+            
+
         </div>
+            
 
         <div>
             <h1>
