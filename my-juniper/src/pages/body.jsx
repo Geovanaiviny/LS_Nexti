@@ -40,6 +40,39 @@ export default function Body(){
 
         <div className="mt-20">
             <CarouselWithContent />
+            
+        </div>
+
+        <div>
+            <p>
+                <span>
+                    bkdfmbzkdm
+                </span>
+            </p>
+        </div>
+
+        <div>
+            <p>
+                <span>
+                    bkdfmbzkdm
+                </span>
+            </p>
+        </div>
+
+        <div>
+            <p>
+                <span>
+                    bkdfmbzkdm
+                </span>
+            </p>
+        </div>
+
+        <div>
+            <p>
+                <span>
+                    bkdfmbzkdm
+                </span>
+            </p>
         </div>
 
     </>
