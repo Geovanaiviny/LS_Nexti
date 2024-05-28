@@ -5,7 +5,7 @@ import CardActions from '@mui/material/CardActions';
 import CardContent from '@mui/material/CardContent';
 import Button from '@mui/material/Button';
 import Typography from '@mui/material/Typography';
-import Hestante from '../assets/img/hestante.jpg'
+import Hestante from '../../assets/img/hestante.jpg'
 import { styled } from '@mui/material/styles';
 
 const StyledCard = styled(Card)(({ theme }) => ({
@@ -58,13 +58,13 @@ const StyledTypography = styled(Typography)(({ theme }) => ({
     whiteSpace: 'normal',
 }));
 
-export default function Boxavaliacao() {
+export default function Boxestante() {
   return (
     <StyledCard>
       <ContentWrapper>
         <CardContent>
           <StyledTypography sx={{ fontFamily: 'Roboto Serif', fontSize: 32, fontWeight: 700 }} color="inherit" gutterBottom>
-            Deixe sua avaliação sobre nossa editora
+            Conheça a nossa livraria
           </StyledTypography>
         </CardContent>
         <CardActions>

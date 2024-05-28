@@ -2,10 +2,11 @@ import React from "react";
 //import HomeB from '../assets/img/homeb.png.jpg'
 import Bannerh from '../assets/img/bannerh.png.png'
 //import Header from "./header";
+import CarouselWithContent from '../components/home/carrestante'
 
-import Boxpublique from "./boxpublique";
-import Boxestante from "./boxestante";
-import Boxavaliacao from "./boxavaliacao";
+import Boxpublique from "../components/home/boxpublique";
+import Boxestante from "../components/home/boxestante";
+import Boxavaliacao from "../components/home/boxavaliacao";
 
 export default function Body(){
     return(
@@ -37,10 +38,8 @@ export default function Body(){
         </div>
             
 
-        <div>
-            <h1>
-                TESTANDO
-            </h1>
+        <div className="mt-20">
+            <CarouselWithContent />
         </div>
 
     </>

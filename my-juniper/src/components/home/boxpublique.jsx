@@ -1,3 +1,25 @@
+// import React from "react";
+// import Hpublin from '../assets/img/hpublin.jpg'
+
+// export default function Boxpublique(){
+//     return(
+//         <>
+            
+//             <div className="flex">
+//                 <figure className="">
+//                     <img className="w-[28rem] h-[25rem] rounded-md shadow-[0px_1px_4px_1px_rgba(0,0,0,0.3)] shadow-[#8d8d8d]" src={Hpublin} alt="" />
+//                 </figure>
+//                 <div>
+//                     <h2 className="font-robotoserif text-4xl font-semibold text-[#FFFFFF] ">
+//                         <span>Publique seu artigo</span>
+//                     </h2>
+//                 </div>
+//             </div>
+
+//         </>
+//     )
+// }
+
 
 import * as React from 'react';
 import Card from '@mui/material/Card';
@@ -5,7 +27,7 @@ import CardActions from '@mui/material/CardActions';
 import CardContent from '@mui/material/CardContent';
 import Button from '@mui/material/Button';
 import Typography from '@mui/material/Typography';
-import Hestante from '../assets/img/hestante.jpg'
+import Hpublin from '../../assets/img/hpublin.jpg';
 import { styled } from '@mui/material/styles';
 
 const StyledCard = styled(Card)(({ theme }) => ({
@@ -16,7 +38,7 @@ const StyledCard = styled(Card)(({ theme }) => ({
   flexDirection: 'column',
   justifyContent: 'flex-end',
   color: '#fff',
-  backgroundImage: `url(${Hestante})`,
+  backgroundImage: `url(${Hpublin})`,
   backgroundSize: 'cover',
   backgroundPosition: 'center',
   '&::before': {
@@ -58,13 +80,13 @@ const StyledTypography = styled(Typography)(({ theme }) => ({
     whiteSpace: 'normal',
 }));
 
-export default function Boxestante() {
+export default function BasicCard() {
   return (
     <StyledCard>
       <ContentWrapper>
         <CardContent>
           <StyledTypography sx={{ fontFamily: 'Roboto Serif', fontSize: 32, fontWeight: 700 }} color="inherit" gutterBottom>
-            Conheça a nossa livraria
+            Publique seu artigo conosco
           </StyledTypography>
         </CardContent>
         <CardActions>

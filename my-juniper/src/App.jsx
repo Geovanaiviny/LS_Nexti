@@ -2,7 +2,7 @@ import { useState } from 'react'
 import React from 'react'
 // import User from '../src/assets/img_icon/user.png'
 import Header from './components/header.jsx';
-import Body from './components/body.jsx';
+import Body from './pages/body.jsx';
 
 // import Select from './componentes_options/Select.jsx';
 
