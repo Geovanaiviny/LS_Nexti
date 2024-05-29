@@ -3,37 +3,96 @@ import Mediestante from '../../assets/img/mediestante.jpg';
 import Biomestante from '../../assets/img/biomestante.jpg';
 import Roboestante from '../../assets/img/roboestante.jpg';
 import Prograestante from '../../assets/img/prograestante.jpg';
+import { Height } from "@mui/icons-material";
+import { borderRadius, fontFamily, fontWeight, height, padding, width } from "@mui/system";
 
 const images = [
-  { src: Mediestante, alt: 'Image 1' },
-  { src: Biomestante, alt: 'Image 2' },
-  { src: Roboestante, alt: 'Image 3' },
-  { src: Prograestante, alt: 'Image 4' },
-  { src: Mediestante, alt: 'Image 5' },
-  { src: Biomestante, alt: 'Image 6' },
-  { src: Roboestante, alt: 'Image 7' },
-  { src: Prograestante, alt: 'Image 8' },
-  { src: Mediestante, alt: 'Image 9' },
-  { src: Biomestante, alt: 'Image 10' },
-  { src: Roboestante, alt: 'Image 11' },
-  { src: Prograestante, alt: 'Image 12' },
-  { src: Mediestante, alt: 'Image 13' },
-  { src: Biomestante, alt: 'Image 14' },
-  { src: Roboestante, alt: 'Image 15' },
-  { src: Prograestante, alt: 'Image 16' },
-  { src: Mediestante, alt: 'Image 17' },
-  { src: Biomestante, alt: 'Image 18' },
-  { src: Roboestante, alt: 'Image 19' },
-  { src: Prograestante, alt: 'Image 20' }
+  { src: Mediestante, alt: 'Image 1'},
+  { src: Biomestante, alt: 'Image 2'},
+  { src: Roboestante, alt: 'Image 3'},
+  { src: Prograestante, alt: 'Image 4'},
+  { src: Mediestante, alt: 'Image 5'},
+  { src: Biomestante, alt: 'Image 6'},
+  { src: Roboestante, alt: 'Image 7'},
+  { src: Prograestante, alt: 'Image 8'},
+  { src: Mediestante, alt: 'Image 9'},
+  { src: Biomestante, alt: 'Image 10'},
+  { src: Roboestante, alt: 'Image 11'},
+  { src: Prograestante, alt: 'Image 12'},
+  { src: Mediestante, alt: 'Image 13'},
+  { src: Biomestante, alt: 'Image 14'},
+  { src: Roboestante, alt: 'Image 15'},
+  { src: Prograestante, alt: 'Image 16'},
+  { src: Mediestante, alt: 'Image 17'},
+  { src: Biomestante, alt: 'Image 18'},
+  { src: Roboestante, alt: 'Image 19'},
+  { src: Prograestante, alt: 'Image 20'}
 ];
+
+const getStyleByAlt = (alt) => {
+    switch (alt) {
+        case 'Image 1':
+            return{
+                imageStyle: { height: '230px', width: '190px', marginLeft: '4px', marginTop: '6px', borderRadius: '2px'},
+                boxStyle: { backgroundColor:'#F4F2EF', border: ' 2px solid #C0C0C0',  borderRadius: '4px', padding: '9px', height:'324px', boxShadow: '0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1)', marginTop: '-8px'},
+                textStyle: { fontFamily: 'Work Sans', fontWeight: 500, color: '#5E5E5E', padding: '4px 0 0 10px '},
+                text: "Identificando os tipos de ossos presen...",
+            };
+
+        case 'Image 2':
+            return{
+                imageStyle: { height: '230px', width: '190px', marginLeft: '4px', marginTop: '6px', borderRadius: '2px'},
+                boxStyle: { backgroundColor:'#F4F2EF', border: ' 2px solid #C0C0C0', borderRadius: '4px', padding: '9px', height:'324px', boxShadow: '0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1)', marginTop: '-8px'},
+                textStyle: { fontFamily: 'Work Sans', fontWeight: 500, color: '#5E5E5E', padding: '4px 0 0 10px '},
+                text: "Fundamentos da Biomedicina...",
+    
+            };
+
+        case 'Image 3':
+            return{
+                imageStyle: { height: '230px', width: '190px', marginLeft: '4px', marginTop: '6px', borderRadius: '2px'},
+                boxStyle: { backgroundColor:'#F4F2EF', border: ' 2px solid #C0C0C0', borderRadius: '4px', padding: '9px', height:'324px', boxShadow: '0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1)', marginTop: '-8px'},
+                textStyle: { fontFamily: 'Work Sans', fontWeight: 500, color: '#5E5E5E', padding: '4px 0 0 10px '},
+                text: "Aspectos da engenharia robótica...",
+    
+            };
+
+        case 'Image 4':
+            return{
+                imageStyle: { height: '230px', width: '190px', marginLeft: '4px', marginTop: '6px', borderRadius: '2px'},
+                boxStyle: { backgroundColor:'#F4F2EF', border: ' 2px solid #C0C0C0', borderRadius: '4px', padding: '9px', height:'324px', boxShadow: '0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1)', marginTop: '-8px'},
+                textStyle: { fontFamily: 'Work Sans', fontWeight: 500, color: '#5E5E5E', padding: '4px 0 0 10px '},
+                text: "Linguagens de programação...",
+        
+            };
+
+        case 'Image 5':
+            return{
+                imageStyle: { height: '230px', width: '190px', marginLeft: '4px', marginTop: '6px', borderRadius: '2px'},
+                boxStyle: { backgroundColor:'#F4F2EF', border: ' 2px solid #C0C0C0', borderRadius: '4px', padding: '9px', height:'324px', boxShadow: '0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1)', marginTop: '-8px'},
+                textStyle: { fontFamily: 'Work Sans', fontWeight: 500, color: '#5E5E5E', padding: '4px 0 0 10px '},
+                text: "Identificando os tipos de ossos presen...",
+            
+            };
+
+        default: 
+        return{
+            imageStyle: { height: '230px', width: '190px', marginLeft: '4px', marginTop: '6px', borderRadius: '2px'},
+            boxStyle: { backgroundColor:'#F4F2EF', border: ' 2px solid #C0C0C0', borderRadius: '4px', padding: '9px', height:'324px', boxShadow: '0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1)', marginTop: '-8px'},
+            textStyle: { fontFamily: 'Work Sans', fontWeight: 500, color: '#5E5E5E', padding: '4px 0 0 10px '},
+            text: "Identificando os tipos de ossos presen...",
+        }
+    }
+
+}
 
 export default function Carrosel() {
   const [currentIndex, setCurrentIndex] = useState(0);
 
   useEffect(() => {
-    const interval = setInterval(() => {
-      setCurrentIndex((prevIndex) => (prevIndex + 1) % 5); // 5 slides
-    }, 6000);
+    const interval = setInterval(() => {    //É + 1
+      setCurrentIndex((prevIndex) => (prevIndex + 9) % 5); // 5 slides
+    }, 6000000); //tem três zeros a menos
     return () => clearInterval(interval);
   }, []);
 
@@ -48,16 +107,20 @@ export default function Carrosel() {
 
   return (
     <div className="flex flex-col items-center min-h-screen //bg-gray-100">
-      <div className="relative border-[4px] border-[#E68C3A] bg-[#F4F2EF] p-4 rounded-lg shadow-xl w-full max-w-5xl overflow-hidden">
+      <div className="relative border-[4px] border-[#E68C3A] bg-[40px] p-10 rounded-lg shadow-xl w-full max-w-5xl overflow-hidden">
         <div className="flex transition-transform duration-1000 ease-in-out"
              style={{ transform: `translateX(-${currentIndex * 100}%)` }}>
           {slides.map((slide, index) => (
-            <div key={index} className="flex w-full flex-none">
-              {slide.map((image, idx) => (
-                <div key={idx} className="flex-1 p-4">
-                  <img src={image.src} alt={image.alt} className="w-full h-[350px] rounded-lg" />
+            <div key={index} className="flex w-full flex-none space-x-[10px]">
+              {slide.map((image, idx) => {
+                const { imageStyle, boxStyle, textStyle, text} = getStyleByAlt(image.alt);
+                return (
+                <div key={idx} className="flex-1 p-4" style={{ ...boxStyle, marginLeft: '28px' }}>
+                  <img src={image.src} alt={image.alt} style={imageStyle} className=" flex justify-start w-full h-[320px] rounded-lg" />
+                  <p style={textStyle}>{text}</p>
                 </div>
-              ))}
+                );
+            })}
             </div>
           ))}
         </div>
