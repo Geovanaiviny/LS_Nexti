@@ -1,57 +1,96 @@
-import React from "react";
-import { Carousel, Typography, Button } from "@material-tailwind/react";
-import Mediestante from '../../assets/img/mediestante.jpg'
-import Biomestante from '../../assets/img/biomestante.jpg'
-import Roboestante from '../../assets/img/roboestante.jpg'
-import Prograestante from '../../assets/img/prograestante.jpg'
-import { styled } from '@mui/material/styles';
-import { useState } from "react";
+import React, { useState, useEffect } from "react";
+import Mediestante from '../../assets/img/mediestante.jpg';
+import Biomestante from '../../assets/img/biomestante.jpg';
+import Roboestante from '../../assets/img/roboestante.jpg';
+import Prograestante from '../../assets/img/prograestante.jpg';
 
+const images = [
+  { src: Mediestante, alt: 'Image 1' },
+  { src: Biomestante, alt: 'Image 2' },
+  { src: Roboestante, alt: 'Image 3' },
+  { src: Prograestante, alt: 'Image 4' },
+  { src: Mediestante, alt: 'Image 5' },
+  { src: Biomestante, alt: 'Image 6' },
+  { src: Roboestante, alt: 'Image 7' },
+  { src: Prograestante, alt: 'Image 8' },
+  { src: Mediestante, alt: 'Image 9' },
+  { src: Biomestante, alt: 'Image 10' },
+  { src: Roboestante, alt: 'Image 11' },
+  { src: Prograestante, alt: 'Image 12' },
+  { src: Mediestante, alt: 'Image 13' },
+  { src: Biomestante, alt: 'Image 14' },
+  { src: Roboestante, alt: 'Image 15' },
+  { src: Prograestante, alt: 'Image 16' },
+  { src: Mediestante, alt: 'Image 17' },
+  { src: Biomestante, alt: 'Image 18' },
+  { src: Roboestante, alt: 'Image 19' },
+  { src: Prograestante, alt: 'Image 20' }
+];
 
- 
+export default function Carrosel() {
+  const [currentIndex, setCurrentIndex] = useState(0);
 
-export default function Carrosel(){
-    const [imageSrc, setImageSrc] = useState({Mediestante});
-  
-    return (
-      <div>
-        <img id="img-change" src={imageSrc} alt="Product" />
-        <div>
-          <input
-            type="radio"
-            id="radio1"
-            name="image"
-            onClick={() => setImageSrc({Mediestante})}
-          />
-          <label htmlFor="radio1">Image 1</label>
-  
-          <input
-            type="radio"
-            id="radio2"
-            name="image"
-            onClick={() => setImageSrc({Biomestante})}
-          />
-          <label htmlFor="radio2">Image 2</label>
-  
-          <input
-            type="radio"
-            id="radio3"
-            name="image"
-            onClick={() => setImageSrc({Roboestante})}
-          />
-          <label htmlFor="radio3">Image 3</label>
-  
-          <input
-            type="radio"
-            id="radio4"
-            name="image"
-            onClick={() => setImageSrc({Prograestante})}
-          />
-          <label htmlFor="radio4">Image 4</label>
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setCurrentIndex((prevIndex) => (prevIndex + 1) % 5); // 5 slides
+    }, 6000);
+    return () => clearInterval(interval);
+  }, []);
+
+  const handleSelectImage = (index) => {
+    setCurrentIndex(index);
+  };
+
+  const slides = [];
+  for (let i = 0; i < images.length; i += 4) {
+    slides.push(images.slice(i, i + 4));
+  }
+
+  return (
+    <div className="flex flex-col items-center min-h-screen //bg-gray-100">
+      <div className="relative border-[4px] border-[#E68C3A] bg-[#F4F2EF] p-4 rounded-lg shadow-xl w-full max-w-5xl overflow-hidden">
+        <div className="flex transition-transform duration-1000 ease-in-out"
+             style={{ transform: `translateX(-${currentIndex * 100}%)` }}>
+          {slides.map((slide, index) => (
+            <div key={index} className="flex w-full flex-none">
+              {slide.map((image, idx) => (
+                <div key={idx} className="flex-1 p-4">
+                  <img src={image.src} alt={image.alt} className="w-full h-[350px] rounded-lg" />
+                </div>
+              ))}
+            </div>
+          ))}
+        </div>
+        <div className="flex justify-center mt-4 space-x-4">
+          {slides.map((_, index) => (
+            <input
+              key={index}
+              type="radio"
+              id={`radio${index}`}
+              name="image"
+              checked={currentIndex === index}
+              onChange={() => handleSelectImage(index)}
+              className="hidden"
+            />
+          ))}
+          {slides.map((_, index) => (
+            <label
+              key={index}
+              htmlFor={`radio${index}`}
+              className={`cursor-pointer w-4 h-4 rounded-full ${
+                currentIndex === index ? 'bg-white' : 'bg-gray-300'
+              }`}
+            />
+          ))}
         </div>
       </div>
-    );
-};
+      <button className="mt-6 px-6 py-2 bg-blue-500 text-white rounded-lg shadow-md hover:bg-blue-600 focus:outline-none focus:ring-2 focus:ring-blue-400">
+        Veja mais
+      </button>
+    </div>
+  );
+}
+
 
 
 
