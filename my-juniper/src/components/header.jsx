@@ -40,19 +40,19 @@ function Header() {
                 
                 {/* ícone de login */}
                 <div className="flex //space-x-4">
-                <a className="bg-[#FFFCFC] border border-[#C0C0C0] rounded-md h-11 w-[180px]  flex justify-center items-center space-x-4 "
-                    href>
-                    <span className="text-[#808080] font-worksans font-medium">Área de Login</span>
-                   <figure> <img className="h-[38px]" src={User}/> </figure> 
-                </a>
+                    <a className="bg-[#FFFCFC] border border-[#C0C0C0] rounded-md h-11 w-[180px]  flex justify-center items-center space-x-4 "
+                        href>
+                            <span className="text-[#808080] font-worksans font-medium">Área de Login</span>
+                        <figure> <img className="h-[38px]" src={User}/> </figure> 
+                    </a>
                 </div>
             </div>
 
 
         </header>
         <div>
-                <Nav />
-            </div>
+            <Nav />
+        </div>
         </>
 
     );

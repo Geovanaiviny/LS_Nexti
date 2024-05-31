@@ -3,6 +3,7 @@ import React from "react";
 import Bannerh from '../assets/img/bannerh.png.png'
 //import Header from "./header";
 import CarouselWithContent from '../components/home/carrestante'
+import Ceditorial from '../components/home/ceditorial';
 
 import Boxpublique from "../components/home/boxpublique";
 import Boxestante from "../components/home/boxestante";
@@ -21,7 +22,7 @@ export default function Body(){
         {/* Imagem para autores publicarem */}
         {/* Imagem para ir a Estante */}
 
-        <div className="flex justify-center //justify-around space-x-[3.2rem] mt-10 ">
+        <div className="flex justify-center //justify-around space-x-[3.6rem] mt-10 ">
             <div>
                 <Boxpublique />
             </div>
@@ -38,15 +39,19 @@ export default function Body(){
         </div>
             
 
-        <div className="mt-20">
+        <div className=" mt-32">
             <CarouselWithContent />
             
         </div>
+        
+        <div className="mt-32">
+            <Ceditorial/>
+        </div>
 
-        <div>
+        <div className="mt-32">
             <p>
                 <span>
-                    bkdfmbzkdm
+                    scl,lcmwkemWEKO
                 </span>
             </p>
         </div>
@@ -54,7 +59,7 @@ export default function Body(){
         <div>
             <p>
                 <span>
-                    bkdfmbzkdm
+                    scl,lcmwkemWEKO
                 </span>
             </p>
         </div>
@@ -62,7 +67,7 @@ export default function Body(){
         <div>
             <p>
                 <span>
-                    bkdfmbzkdm
+                    scl,lcmwkemWEKO
                 </span>
             </p>
         </div>
@@ -70,10 +75,19 @@ export default function Body(){
         <div>
             <p>
                 <span>
-                    bkdfmbzkdm
+                    scl,lcmwkemWEKO
                 </span>
             </p>
         </div>
+
+        <div>
+            <p>
+                <span>
+                    scl,lcmwkemWEKO
+                </span>
+            </p>
+        </div>
+
 
     </>
 
