@@ -17,7 +17,7 @@ export default function Ceditorial (){
                     </p>
                 </div>
                 
-                <Button variant="samais">Outlined</Button>
+                <Button variant="samais">Saiba mais</Button>
 
                 <div className="flex justify-end">
                     <figure className="flex">
