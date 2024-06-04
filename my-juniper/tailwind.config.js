@@ -8,7 +8,8 @@ export default {
     extend: {
       fontFamily: {
         worksans: ['Work Sans', 'sans-serif'],
-        robotoserif: ['Roboto Serif', 'serif']
+        robotoserif: ['Roboto Serif', 'serif'],
+        poppins: ['Poppins', 'sans-serif'],
       }
     },
   },
