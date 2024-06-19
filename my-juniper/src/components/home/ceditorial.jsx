@@ -45,7 +45,7 @@ export default function Ceditorial (){
 
                 <div className="flex justify-end ">
                     <figure className="flex">
-                        <img className=" w-44 max-w-2xl h-64 max-h-96" src={Cedito} />
+                        <img className=" w-50 max-w-2xl h-86 max-h-96" src={Cedito} />
                     </figure>
                 </div>
             </div>

@@ -8,6 +8,8 @@ import Ceditorial from '../components/home/ceditorial';
 import Boxpublique from "../components/home/boxpublique";
 import Boxestante from "../components/home/boxestante";
 import Boxavaliacao from "../components/home/boxavaliacao";
+import Carraval from "../components/home/carravaliacao";
+import Carrpubli from "../components/home/carrpublique";
 
 export default function Body(){
     return(
@@ -48,45 +50,14 @@ export default function Body(){
             <Ceditorial/>
         </div>
 
-        <div className="mt-32">
-            <p>
-                <span>
-                    scl,lcmwkemWEKO
-                </span>
-            </p>
+        <div className=" mt-40">
+            <Carraval/>
         </div>
 
-        <div>
-            <p>
-                <span>
-                    scl,lcmwkemWEKO
-                </span>
-            </p>
+        <div className="mt-32 mb-32">
+            <Carrpubli/>
         </div>
 
-        <div>
-            <p>
-                <span>
-                    scl,lcmwkemWEKO
-                </span>
-            </p>
-        </div>
-
-        <div>
-            <p>
-                <span>
-                    scl,lcmwkemWEKO
-                </span>
-            </p>
-        </div>
-
-        <div>
-            <p>
-                <span>
-                    scl,lcmwkemWEKO
-                </span>
-            </p>
-        </div>
 
 
     </>

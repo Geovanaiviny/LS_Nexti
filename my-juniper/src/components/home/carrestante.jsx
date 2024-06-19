@@ -3,8 +3,6 @@ import Mediestante from '../../assets/img/mediestante.jpg';
 import Biomestante from '../../assets/img/biomestante.jpg';
 import Roboestante from '../../assets/img/roboestante.jpg';
 import Prograestante from '../../assets/img/prograestante.jpg';
-import { Height } from "@mui/icons-material";
-import { borderRadius, fontFamily, fontWeight, height, padding, width } from "@mui/system";
 
 const images = [
   { src: Mediestante, alt: 'Image 1'},
@@ -32,7 +30,7 @@ const images = [
 const getStyleByAlt = (alt) => {
     switch (alt) {
         case 'Image 1':
-            return{
+            return {
                 imageStyle: { height: '230px', width: '190px', marginLeft: '16px', marginTop: '6px', borderRadius: '2px'},
                 boxStyle: { backgroundColor:'#F4F2EF', border: ' 1px solid #C0C0C0',  borderRadius: '4px', padding: '4px', height:'324px', boxShadow: ' 3px 3px 10px -3px rgba(0, 0, 0, 0.25)', marginTop: '-8px'},
                 textStyle: { fontFamily: 'Work Sans', fontWeight: 500, color: '#5E5E5E', padding: '14px 0 0 10px '},
@@ -40,59 +38,46 @@ const getStyleByAlt = (alt) => {
             };
 
         case 'Image 2':
-            return{
-                imageStyle: { height: '230px', width: '190px', marginLeft: '14px', marginTop: '6px', borderRadius: '2px'},
-                boxStyle: { backgroundColor:'#F4F2EF', border: ' 1px solid #C0C0C0', borderRadius: '4px', padding: '4px', height:'324px', boxShadow: '3px 3px 10px -3px rgba(0, 0, 0, 0.25)', marginTop: '-8px'},
-                textStyle: { fontFamily: 'Work Sans', fontWeight: 500, color: '#5E5E5E', padding: '14px 0 0 10px '},
-                text: "Fundamentos da Biomedicina...",
-    
+            return {
+              imageStyle: { height: '230px', width: '190px', marginLeft: '16px', marginTop: '6px', borderRadius: '2px'},
+              boxStyle: { backgroundColor:'#F4F2EF', border: ' 1px solid #C0C0C0',  borderRadius: '4px', padding: '4px', height:'324px', boxShadow: ' 3px 3px 10px -3px rgba(0, 0, 0, 0.25)', marginTop: '-8px'},
+              textStyle: { fontFamily: 'Work Sans', fontWeight: 500, color: '#5E5E5E', padding: '14px 0 0 10px '},
+              text: "Fundamentos da Biomedicina...",
             };
 
         case 'Image 3':
-            return{
-                imageStyle: { height: '230px', width: '190px', marginLeft: '14px', marginTop: '6px', borderRadius: '2px'},
-                boxStyle: { backgroundColor:'#F4F2EF', border: ' 1px solid #C0C0C0', borderRadius: '4px', padding: '4px', height:'324px', boxShadow: '3px 3px 10px -3px rgba(0, 0, 0, 0.25)', marginTop: '-8px'},
-                textStyle: { fontFamily: 'Work Sans', fontWeight: 500, color: '#5E5E5E', padding: '14px 0 0 10px '},
-                text: "Aspectos da engenharia robótica...",
-    
+            return {
+              imageStyle: { height: '230px', width: '190px', marginLeft: '16px', marginTop: '6px', borderRadius: '2px'},
+              boxStyle: { backgroundColor:'#F4F2EF', border: ' 1px solid #C0C0C0',  borderRadius: '4px', padding: '4px', height:'324px', boxShadow: ' 3px 3px 10px -3px rgba(0, 0, 0, 0.25)', marginTop: '-8px'},
+              textStyle: { fontFamily: 'Work Sans', fontWeight: 500, color: '#5E5E5E', padding: '14px 0 0 10px '},
+              text: "Aspectos da engenharia robótica...",
             };
 
         case 'Image 4':
-            return{
-                imageStyle: { height: '230px', width: '190px', marginLeft: '14px', marginTop: '6px', borderRadius: '2px'},
-                boxStyle: { backgroundColor:'#F4F2EF', border: ' 1px solid #C0C0C0', borderRadius: '4px', padding: '4px', height:'324px', boxShadow: '3px 3px 10px -3px rgba(0, 0, 0, 0.25)', marginTop: '-8px'},
-                textStyle: { fontFamily: 'Work Sans', fontWeight: 500, color: '#5E5E5E', padding: '14px 0 0 10px '},
-                text: "Linguagens de programação...",
-        
-            };
-
-        case 'Image 5':
-            return{
-                imageStyle: { height: '230px', width: '190px', marginLeft: '4px', marginTop: '6px', borderRadius: '2px'},
-                boxStyle: { backgroundColor:'#F4F2EF', border: ' 1px solid #C0C0C0', borderRadius: '4px', padding: '4px', height:'324px', boxShadow: '3px 3px 10px -3px rgba(0, 0, 0, 0.25)', marginTop: '-8px'},
-                textStyle: { fontFamily: 'Work Sans', fontWeight: 500, color: '#5E5E5E', padding: '4px 0 0 10px '},
-                text: "Identificando os tipos de ossos presen...",
-            
+            return {
+              imageStyle: { height: '230px', width: '190px', marginLeft: '16px', marginTop: '6px', borderRadius: '2px'},
+              boxStyle: { backgroundColor:'#F4F2EF', border: ' 1px solid #C0C0C0',  borderRadius: '4px', padding: '4px', height:'324px', boxShadow: ' 3px 3px 10px -3px rgba(0, 0, 0, 0.25)', marginTop: '-8px'},
+              textStyle: { fontFamily: 'Work Sans', fontWeight: 500, color: '#5E5E5E', padding: '14px 0 0 10px '},
+              text: "Linguagens de programação...",
             };
 
         default: 
-        return{
-            imageStyle: { height: '230px', width: '190px', marginLeft: '4px', marginTop: '6px', borderRadius: '2px'},
-            boxStyle: { backgroundColor:'#F4F2EF', border: ' 1px solid #C0C0C0', borderRadius: '4px', padding: '4px', height:'324px', boxShadow: '3px 3px 10px -3px rgba(0, 0, 0, 0.25)', marginTop: '-8px'},
-            textStyle: { fontFamily: 'Work Sans', fontWeight: 500, color: '#5E5E5E', padding: '4px 0 0 10px '},
-            text: "Identificando os tipos de ossos presen...",
-        }
+            return {
+              imageStyle: { height: '230px', width: '190px', marginLeft: '16px', marginTop: '6px', borderRadius: '2px'},
+              boxStyle: { backgroundColor:'#F4F2EF', border: ' 1px solid #C0C0C0',  borderRadius: '4px', padding: '4px', height:'324px', boxShadow: ' 3px 3px 10px -3px rgba(0, 0, 0, 0.25)', marginTop: '-8px'},
+              textStyle: { fontFamily: 'Work Sans', fontWeight: 500, color: '#5E5E5E', padding: '14px 0 0 10px '},
+              text: "Identificando os tipos de ossos presen...",
+            };
     }
-
-}
+};
 
 export default function Carrosel() {
   const [currentIndex, setCurrentIndex] = useState(0);
 
   useEffect(() => {
-    const interval = setInterval(() => {    //É + 1
-      setCurrentIndex((prevIndex) => (prevIndex + 9) % 5); // 5 slides
-    }, 6000000); //tem três zeros a menos
+    const interval = setInterval(() => {
+      setCurrentIndex((prevIndex) => (prevIndex + 1) % 5); // Ajustado para 5 slides
+    }, 6000);
     return () => clearInterval(interval);
   }, []);
 
@@ -106,30 +91,38 @@ export default function Carrosel() {
   }
 
   return (
-    <div className="flex flex-col items-center min-h-screen //bg-black">
-      <div className="relative border-[4px] border-[#E68C3A] bg-[40px] p-10 w-[1200px] rounded-lg shadow-xl max-w-7xl overflow-hidden">
-        <div className="flex transition-transform duration-1000 ease-in-out"
-             style={{ transform: `translateX(-${currentIndex * 100}%)` }}>
-          {slides.map((slide, index) => (
-            <div key={index} className="flex w-full flex-none gap-6">
-              {slide.map((image, idx) => {
-                const { imageStyle, boxStyle, textStyle, text} = getStyleByAlt(image.alt);
-                return (
-                <div key={idx} className="flex-1 p-4" style={{ ...boxStyle, marginLeft: '18px' }}>
-                  <img src={image.src} alt={image.alt} style={imageStyle} className=" flex justify-start w-full h-[320px] rounded-lg" />
-                  <p style={textStyle}>{text}</p>
-                </div>
-                );
-            })}
-            </div>
-          ))}
-        </div>
-        <div className="flex justify-center mt-10 space-x-4">
-          {slides.map((_, index) => (
-            <input
-              key={index}
-              type="radio"
-              id={`radio${index}`}
+    <>
+      <div>
+        <h1 className="text-[#434343] font-robotoserif text-6xl font-semibold ml-[660px] mb-10">
+          Livraria
+        </h1>
+      </div>
+      
+      <div className="flex flex-col items-center min-h-screen">
+        <div className="relative border-[4px] border-[#E68C3A] bg-[40px] p-10 w-[1200px] rounded-lg shadow-xl max-w-7xl overflow-hidden">
+          <div className="flex transition-transform duration-1000 ease-in-out"
+               style={{ transform: `translateX(-${currentIndex * 100}%)` }}>
+            {slides.map((slide, index) => (
+              <div key={index} className="flex w-full flex-none gap-6">
+                {slide.map((image, idx) => {
+                  const { imageStyle, boxStyle, textStyle, text } = getStyleByAlt(image.alt);
+                  return (
+                    <div key={idx} className="flex-1 p-4" style={{ ...boxStyle, marginLeft: '18px' }}>
+                      <img src={image.src} alt={image.alt} style={imageStyle} className="flex justify-start w-full h-[320px] rounded-lg" />
+                      <p style={textStyle}>{text}</p>
+                    </div>
+                  );
+                })}
+              </div>
+            ))}
+          </div>
+          <div className="flex justify-center mt-10 space-x-4">
+            {slides.map((_, index) => (
+              <input
+                key={index}
+                type="radio"
+                id={`radio${index}`}
+
               name="image"
               checked={currentIndex === index}
               onChange={() => handleSelectImage(index)}
@@ -147,10 +140,13 @@ export default function Carrosel() {
           ))}
         </div>
       </div>
-      <button className="mt-6 px-6 py-2 bg-blue-500 text-white rounded-lg shadow-md hover:bg-blue-600 focus:outline-none focus:ring-2 focus:ring-blue-400">
+
+      <button className="mt-14 px-10 font-poppins py-4 bg-[#213E60] text-white text-xl font-semibold rounded-lg shadow-md hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-blue-400">
         Veja mais
       </button>
     </div>
+
+    </>
   );
 }
 
