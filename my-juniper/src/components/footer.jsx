@@ -42,7 +42,8 @@ const Footer = () => {
           </p>
         </div>
       </div>
-      <div className="flex items-end justify-end h-12 w-44 ml-[1250px]">
+
+      <div className="flex items-end justify-end h-12 w-100vw //ml-[1250px]">
         <figure className="flex justify-end">
           <img className="flex h-[130px] w-[150px]" src={Logofoot} />
         </figure>

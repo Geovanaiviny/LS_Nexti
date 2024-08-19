@@ -25,7 +25,7 @@ export default function Body(){
         {/* Imagem para ir a Estante */}
         {/* {lalal} */}
 
-        <div className="flex justify-center //justify-around space-x-[3.6rem] mt-10 ">
+        {/* <div className="flex justify-center //justify-around space-x-[3.6rem] mt-10 ">
             <div>
                 <Boxpublique />
             </div>
@@ -39,13 +39,13 @@ export default function Body(){
             </div>
             
 
-        </div>
+        </div> */}
             
 
-        <div className=" mt-32">
+        {/* <div className=" mt-32">
             <CarouselWithContent />
             
-        </div>
+        </div> */}
         
         <div className="mt-32">
             <Ceditorial/>

@@ -218,7 +218,7 @@ export default function TestimonialsCarousel() {
           </div>
         </div>
 
-        <div className="flex gap-[400px] justify-between mt-6">
+        <div className="flex gap-[400px] mt-6">
           <div className="min-h-1 mt-6">
             <StyledButton variant="samais">Envie seu depoimento</StyledButton>
           </div>
