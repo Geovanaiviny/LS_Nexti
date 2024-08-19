@@ -93,7 +93,7 @@ export default function Carrosel() {
   return (
     <>
       <div>
-        <h1 className="text-[#d35151] font-robotoserif text-6xl font-semibold text-center mb-10">
+        <h1 className="text-[#434343] font-robotoserif text-6xl font-semibold text-center mb-10">
           Livraria
         </h1>
       </div>
