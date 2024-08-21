@@ -43,8 +43,8 @@ export default function Coreditorial (){
                         <figure>
                             <img src={Imagcorpo} alt="" />
                         </figure>
-                    </div>1234
-                    
+                    </div>
+
 
 
 
