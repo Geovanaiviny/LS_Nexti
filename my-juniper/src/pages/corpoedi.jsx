@@ -10,8 +10,6 @@ export default function Coreditorial (){
 
             <div className="bg-[#F4F2EF] w-[100%]">
 
-
-
                     {/* imagem header */}
                 <div style={{ position: 'relative', textAlign: 'center' }}>
                     <img className="w-screen" src={Hcomum} alt="Imagem Comum" style={{ width: '100%', height: 'auto' }} />
@@ -39,23 +37,17 @@ export default function Coreditorial (){
 
                     </div>
                     
-                    <div>
-                        <figure>
+                    <div className=" flex justify-center bg-yellow-400 w-[30%] ml-[850px] mg">
+                        <figure className="">
                             <img src={Imagcorpo} alt="" />
                         </figure>
                     </div>
 
-
-
-
-                    <div className="mt-32 mb-24 flex h-60 w-[180px] //items-center">
-
-
-        
+                    <div className=" flex-col justify-center">
                             {/* quadrado */}
-                        <div className="flex justify-start ml-[180px] w-[150px] h-[350px]">
+                        <div className=" bg-black flex mb-12 justify-start w-[620px]">
 
-                            <div className="flex justify-start items-center bg-transparent shadow-[0_8px_40px_-15px_rgba(104,154,212,0.85)] border-[0.1px] rounded-md border-[#b2b2b2] w-[800px] h-[250px] max-h-screen">
+                            <div className="flex justify-start items-center bg-transparent shadow-[0_8px_40px_-15px_rgba(104,154,212,0.85)] border-[0.1px] rounded-md border-[#b2b2b2] w-[600px] h-[250px] max-h-screen">
                                 <div className="flex flex-col w-[760px] gap-10 justify-center items-start p-10 rounded-md">
 
 

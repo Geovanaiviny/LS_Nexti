@@ -12,7 +12,7 @@ const StyledCard = styled(Card)(({ theme }) => ({
   position: 'relative',
   width: 360,
   height: 400,
-  display: 'flex',
+  display: 'flex',  
   flexDirection: 'column',
   justifyContent: 'flex-end',
   color: '#fff',
