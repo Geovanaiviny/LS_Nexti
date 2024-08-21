@@ -24,7 +24,7 @@ const StyledButton = styled(Button)(({ theme }) => ({
 export default function Qsomos(){
     return(
         <>
-        <div className=" mt-32">
+        <div className=" w-[100%] ">
             <div style={{ position: 'relative', textAlign: 'center' }}>
                 <img className="w-screen" src={Hcomum} alt="Imagem Comum" style={{ width: '100%', height: 'auto' }} />
                 <h1 className="text-6xl font-robotoserif font-semibold text-[#F4F2EF] textShadow: '2px 2px 4px rgba(0, 0, 0, 0.6)"
@@ -33,7 +33,7 @@ export default function Qsomos(){
                 </h1>
             </div>
 
-            <div className="mt-32 flex justify-center">
+            <div className="mt-32 mb-32 flex justify-center">
                 <div className="flex gap-8 //justify-around items-center bg-transparent shadow-[0_8px_40px_-15px_rgba(104,154,212,0.85)] border-[0.1px] rounded-md border-[#b2b2b2] w-[1200px] max-w-7xl h-[580px] max-h-screen">
                     <figure className=" mb-[460px] ml-16">
                         <img src={Lineicon}/>

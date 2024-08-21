@@ -42,10 +42,10 @@ export default function Body(){
         </div> */}
             
 
-        {/* <div className=" mt-32">
+        <div className=" mt-32">
             <CarouselWithContent />
             
-        </div> */}
+        </div>
         
         <div className="mt-32">
             <Ceditorial/>

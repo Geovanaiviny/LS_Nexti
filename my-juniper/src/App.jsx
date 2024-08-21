@@ -19,9 +19,9 @@ function App() {
   <>
   <div className="bg-[#F4F2EF] min-h-screen">
     <Header />
-    <Body />
+    {/* <Body /> */}
     {/* <Quemsomos/> */}
-    {/* <Coreditorial /> */}
+    <Coreditorial />
     <Footer />
   </div>
   </>
