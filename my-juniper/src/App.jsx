@@ -6,6 +6,7 @@ import Body from './pages/body.jsx';
 import Quemsomos from './pages/quemsomos.jsx';
 import Footer from './components/footer.jsx';
 import Coreditorial from './pages/corpoedi.jsx';
+import Codigoetic from './pages/codigetica.jsx';
 
 
 // import Select from './componentes_options/Select.jsx';
@@ -19,9 +20,10 @@ function App() {
   <>
   <div className="bg-[#F4F2EF] min-h-screen">
     <Header />
-    <Body />
+    {/* <Body /> */}
     {/* <Quemsomos/> */}
     {/* <Coreditorial /> */}
+    <Codigoetic/>
     <Footer />
   </div>
   </>
