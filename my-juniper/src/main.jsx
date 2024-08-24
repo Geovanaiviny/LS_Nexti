@@ -9,6 +9,7 @@ import Home from './pages/home.jsx';
 import Corpoedito from './pages/corpoedi.jsx';
 import Quemsomos from './pages/quemsomos.jsx';
 import ErrorPage from './components/ErrorPage.jsx';  
+import Estante from './pages/Estante.jsx';
 
 const router = createBrowserRouter([
   {
@@ -28,6 +29,10 @@ const router = createBrowserRouter([
       {
         path: 'quemsomos',
         element:<Quemsomos/>,
+      },
+      {
+        path: 'estante',
+        element: <Estante/>,
       },
     ],
   },

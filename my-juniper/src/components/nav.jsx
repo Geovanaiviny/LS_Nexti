@@ -81,7 +81,7 @@ export default function Nav() {
           >
             {/* MenuItems com valores de rota */}
             <MenuItem value={"quemsomos"}>Quem somos nós</MenuItem>
-            <MenuItem value={"corpoeditorial"}>Corpo Editorial</MenuItem>
+            <MenuItem value={"corpoedito"}>Corpo Editorial</MenuItem>
             <MenuItem value={"perguntasfrequentes"}>Perguntas Frequentes</MenuItem>
             <MenuItem value={"codigodeetica"}>Código de Ética</MenuItem>
             <MenuItem value={"politicadeprivacidade"}>Política de Privacidade</MenuItem>
@@ -89,7 +89,7 @@ export default function Nav() {
           </Select>
         </FormControl>
 
-        <div className="text-white">Estante</div>
+        <a onClick={() => navigate('/estante')} className="text-white cursor-pointer">Estante</a>
         <div className="text-white">Serviços</div>
         <a href="" className="text-white">Chamadas abertas</a>
       </div>

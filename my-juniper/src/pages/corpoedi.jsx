@@ -29,11 +29,6 @@ export default function Coreditorial() {
 
 
 
-
-
-
-
-
                 {/* linha azul */}
                 <div className="flex justify-center w-full bg-[#F4F2EF]">
                     <figure className="mt-6 sm:mt-12 md:mt-24">

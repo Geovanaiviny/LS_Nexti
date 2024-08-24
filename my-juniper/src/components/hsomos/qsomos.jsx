@@ -24,7 +24,7 @@ const StyledButton = styled(Button)(({ theme }) => ({
 export default function Qsomos(){
     return(
         <>
-        <div className=" w-[100%] ">
+        <div className=" w-[100%] bg-[#F4F2EF] ">
             <div style={{ position: 'relative', textAlign: 'center' }}>
                 <img className="w-screen" src={Hcomum} alt="Imagem Comum" style={{ width: '100%', height: 'auto' }} />
                 <h1 className="text-6xl font-robotoserif font-semibold text-[#F4F2EF] textShadow: '2px 2px 4px rgba(0, 0, 0, 0.6)"
