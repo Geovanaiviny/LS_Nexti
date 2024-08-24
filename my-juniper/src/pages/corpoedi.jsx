@@ -1,71 +1,83 @@
 import React from "react";
 import Linecorpo from "../assets/img_icon/linecorpoedi.png";
-import Hcomum from "../assets/img/hcomum.png"
-import Imagcorpo from "../assets/img/copedit.svg.png" 
+import Hcomum from "../assets/img/hcomum.png";
+import Imagcorpo from "../assets/img/copedit.svg.png";
 
-export default function Coreditorial (){
-    return(
+export default function Coreditorial() {
+    return (
         <>
+           <div className="bg-[#F4F2EF]">
 
-
-            <div className="bg-[#F4F2EF] w-[100%]">
-
-                    {/* imagem header */}
-                <div style={{ position: 'relative', textAlign: 'center' }}>
-                    <img className="w-screen" src={Hcomum} alt="Imagem Comum" style={{ width: '100%', height: 'auto' }} />
-                    <h1 className="text-6xl font-robotoserif font-semibold text-[#F4F2EF] textShadow: '2px 2px 4px rgba(0, 0, 0, 0.6)"
-                        style={{ position: 'absolute', top: '50%', left: '30%', transform: 'translate(-50%, -50%)' }}>
-                        Corpo Editorial
-                    </h1>
-                </div>
-
-                
-
-
-                        {/* line azul */}
-                    <div className=" flex justify-center w-[100%] bg-[#bg-[#F4F2EF]">
-                        <figure className=" mt-24 //border-t-[200px]">
-                                <img className="w-[390px] h-[4px]" src={Linecorpo} alt="Line" />
-                        </figure>
-                    </div>
-
-                            {/* título */}
-                    <div className=" mt-[100px] h-10 w-56">
-                        <h1 className=" ml-44 mt-40 w-[400px] h-14 text-5xl font-robotoserif font-semibold text-[#213E60]">
+                {/* imagem header */}
+                <div className="relative text-center">
+                    <img className="w-full h-auto" src={Hcomum} alt="Imagem Comum" />
+                        <h1 className="text-4xl sm:text-5xl md:text-6xl font-robotoserif font-semibold text-[#F4F2EF] absolute"
+                            style={{ top: '50%', left: '30%', transform: 'translate(-50%, -50%)' }}>
                             Corpo Editorial
                         </h1>
+                </div>  
 
+
+
+                {/* <div style={{ position: 'relative', textAlign: 'center' }}>
+                    <img className="w-screen" src={Hcomum} alt="Imagem Comum" style={{ width: '100%', height: 'auto' }} />
+                        <h1 className="text-6xl font-robotoserif font-semibold text-[#F4F2EF] textShadow: '2px 2px 4px rgba(0, 0, 0, 0.6)"
+                            style={{ position: 'absolute', top: '50%', left: '30%', transform: 'translate(-50%, -50%)' }}>
+                            Quem somos nós
+                        </h1>
+                </div> */}
+
+
+
+
+
+
+
+
+                {/* linha azul */}
+                <div className="flex justify-center w-full bg-[#F4F2EF]">
+                    <figure className="mt-6 sm:mt-12 md:mt-24">
+                        <img className="w-[200px] sm:w-[300px] md:w-[390px] h-[2px] sm:h-[3px] md:h-[4px]" src={Linecorpo} alt="Line" />
+                    </figure>
+                </div>
+
+                {/* Seção lado a lado */}
+                <div className="flex flex-col items-start justify-center gap-4 px-4">
+
+                    {/* título */}
+                    <div className="flex justify-center items-center mt-8 sm:mt-12 md:mt-20 ml-32">
+                        <h1 className="text-3xl sm:text-4xl md:text-5xl font-robotoserif font-semibold text-[#213E60]">
+                            Corpo Editorial
+                        </h1>
                     </div>
-                    
-                    <div className=" flex justify-center bg-yellow-400 w-[30%] ml-[850px] mg">
-                        <figure className="">
-                            <img src={Imagcorpo} alt="" />
-                        </figure>
-                    </div>
 
-                    <div className=" flex-col justify-center">
-                            {/* quadrado */}
-                        <div className=" bg-black flex mb-12 justify-start w-[620px]">
+                    {/* Seção contendo o quadrado branco e a imagem */}
+                    <div className="flex flex-col sm:flex-row items-center justify-center w-full gap-4 px-4">
 
-                            <div className="flex justify-start items-center bg-transparent shadow-[0_8px_40px_-15px_rgba(104,154,212,0.85)] border-[0.1px] rounded-md border-[#b2b2b2] w-[600px] h-[250px] max-h-screen">
-                                <div className="flex flex-col w-[760px] gap-10 justify-center items-start p-10 rounded-md">
-
-
-                                    <p className=" text-[20px] w-[510px] font-medium font-worksans text-[#535353]">
-                                    Fabricio Carneiro - Coordenador de ADS e SI na UNIFAP 
+                        {/* quadrado branco */}
+                        <div className="bg-white flex items-center shadow-lg rounded-md border border-[#b2b2b2] w-full sm:w-[500px] md:w-[650px] p-4 sm:p-8 md:p-14">
+                            <div className="flex flex-col gap-4">
+                                <p className="text-sm sm:text-base md:text-lg font-medium font-worksans text-[#535353]">
+                                    Fabricio Carneiro - Coordenador de ADS e SI na UNIFAP
                                     <br />
                                     Centro Universitário Paraíso
-                                    <br /> 
                                     <br />
-                                    Samyra Lustoza - Professora de Enfermagem 
-                                    Centro Universitário Paraíso 
-        
-                                    </p>
-                                </div>
+                                    <br />
+                                    Samyra Lustoza - Professora de Enfermagem
+                                    Centro Universitário Paraíso
+                                </p>
                             </div>
                         </div>
+
+                        {/* imagem lateral */}
+                        <div className="flex items-center justify-center w-full sm:w-[450px] md:w-[570px] h-auto mb-20">
+                            <img src={Imagcorpo} alt="Imagem Corpo Editorial" className="w-full md:w-[500px] rounded-full object-cover" />
+                        </div>
                     </div>
+                </div>
             </div>
+
+
         </>
     );
 }

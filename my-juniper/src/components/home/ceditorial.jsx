@@ -3,6 +3,7 @@ import Button from '@mui/material/Button';
 import Cedito from '../../assets/img/cedito.jpg'
 import { styled } from '@mui/material/styles';
 import { NoEncryption } from "@mui/icons-material";
+import { useNavigate } from "react-router-dom";
 
 
 const StyledButton = styled(Button)(({ theme }) => ({
@@ -24,6 +25,14 @@ const StyledButton = styled(Button)(({ theme }) => ({
 
 
 export default function Ceditorial (){
+
+    const navigate = useNavigate();
+
+    const handleButtonClick = () => {
+        navigate('/corpoedito');
+    };
+
+
     return (
         <>
         <div className="flex //bg-black justify-center">
@@ -37,7 +46,7 @@ export default function Ceditorial (){
                         Conheça a equipe por trás das palavras! Nosso corpo editorial é a engrenagem que impulsiona a qualidade e a precisão em cada texto.
                     </p>
                     <div className=" min-h-1">
-                        <StyledButton variant="samais" >Saiba mais</StyledButton>
+                        <StyledButton variant="samais" onClick={handleButtonClick}>Saiba mais</StyledButton>
                     </div>
                 </div>
 

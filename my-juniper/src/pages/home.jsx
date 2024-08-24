@@ -11,7 +11,7 @@ import Boxavaliacao from "../components/home/boxavaliacao";
 import Carraval from "../components/home/carravaliacao";
 import Carrpubli from "../components/home/carrpublique";
 
-export default function Body(){
+export default function Home(){
     return(
     <>
         {/* Banner no início da Home */}
