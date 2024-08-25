@@ -530,7 +530,7 @@
 
 
 
-import React from "react";
+import React, { useState } from "react";
 import Filtro from './filtro.jsx';
 import Hlivros from '../../assets/img/hlivros.svg';
 import Roboestan from '../../assets/img/roboestante.jpg';
@@ -571,9 +571,76 @@ const Livro = ({ src, title }) => (
     </div>
 );
 
-export default function Estante() {
+// Paginação
+const Pagination = ({ totalPages, currentPage, onPageChange }) => {
+    const renderPageNumbers = () => {
+        const pageNumbers = [];
+        for (let i = 1; i <= totalPages; i++) {
+            if (i === currentPage) {
+                pageNumbers.push(
+                    <button
+                        key={i}
+                        className="px-4 py-2 border border-gray-400 bg-white text-gray-700"
+                        onClick={() => onPageChange(i)}
+                    >
+                        {i}
+                    </button>
+                );
+            } else {
+                pageNumbers.push(
+                    <button
+                        key={i}
+                        className="px-4 py-2 border border-gray-400 text-gray-700"
+                        onClick={() => onPageChange(i)}
+                    >
+                        {i}
+                    </button>
+                );
+            }
+        }
+        return pageNumbers;
+    };
+
     return (
-        <>
+        <div className="  w-full h-24">
+            <div className=" flex justify-center items-center space-x-2 rounded-full border border-gray-400 p-1 bg-gray-50 w-[50%] max-w-[30%] mx-auto mt-8">
+                <button
+                    className="px-4 py-2 border border-gray-400 text-gray-700 bg-white rounded-l-full"
+                    onClick={() => onPageChange(currentPage - 1)}
+                    disabled={currentPage === 1}
+                >
+                    &lt;
+                </button>
+                {renderPageNumbers().slice(0, 5)}
+                <span className="px-4 py-2 text-gray-700">...</span>
+                <button
+                    className="px-4 py-2 border border-gray-400 text-gray-700"
+                    onClick={() => onPageChange(totalPages)}
+                >
+                    {totalPages}
+                </button>
+                <button
+                    className="px-4 py-2 border border-gray-400 text-gray-700 bg-white rounded-r-full"
+                    onClick={() => onPageChange(currentPage + 1)}
+                    disabled={currentPage === totalPages}
+                >
+                    &gt;
+                </button>
+            </div>
+        </div>
+    );
+}
+
+export default function Estante() {
+    const [currentPage, setCurrentPage] = useState(1);
+    const totalPages = 123;
+
+    const handlePageChange = (page) => {
+        setCurrentPage(page);
+    };
+
+    return (
+        <div className="bg-[#F4F2EF] w-full">
             {/* Imagem header */}
             <div className="relative text-center">
                 <img className="w-full h-auto" src={Hlivros} alt="Imagem Comum" />
@@ -588,43 +655,22 @@ export default function Estante() {
             </div>
 
             {/* Container principal */}
-            <div className=" bg-black flex flex-col items-center justify-center w-full mb-14">
-
+            <div className="//bg-black flex flex-col items-center justify-center w-full mb-14">
                 {/* Quadrado branco */}
                 <div className="flex flex-col items-center justify-center bg-[#ffff] shadow-[0_8px_18px_-2px_rgba(104,154,212,0.85)] border-[0.1px] rounded-md border-[#dadada] w-[80%] min-h-full mb-12 gap-10">
-
-
                     {/* Fileiras de livros */}
-                    <div className="w-full flex flex-wrap justify-center items-center gap-12">
-                        <Livro src={Roboestan} title="Aspectos da engenharia robótica" />
-                        <Livro src={Programaestan} title="Linguagens de programação" />
-                        <Livro src={Biomestante} title="Fundamentos da biomedicina" />
-                        <Livro src={Mediestan} title="Identificando os tipos de ossos presentes" />
-                    </div>
-
-
-                    <div className="w-full flex flex-wrap justify-center items-center gap-12">
-                        <Livro src={Roboestan} title="Aspectos da engenharia robótica" />
-                        <Livro src={Programaestan} title="Linguagens de programação" />
-                        <Livro src={Biomestante} title="Fundamentos da biomedicina" />
-                        <Livro src={Mediestan} title="Identificando os tipos de ossos presentes" />
-                    </div>
-
-                    <div className="w-full flex flex-wrap justify-center items-center gap-12">
-                        <Livro src={Roboestan} title="Aspectos da engenharia robótica" />
-                        <Livro src={Programaestan} title="Linguagens de programação" />
-                        <Livro src={Biomestante} title="Fundamentos da biomedicina" />
-                        <Livro src={Mediestan} title="Identificando os tipos de ossos presentes" />
-                    </div>
-
-                    <div className="w-full flex flex-wrap justify-center items-center gap-12">
-                        <Livro src={Roboestan} title="Aspectos da engenharia robótica" />
-                        <Livro src={Programaestan} title="Linguagens de programação" />
-                        <Livro src={Biomestante} title="Fundamentos da biomedicina" />
-                        <Livro src={Mediestan} title="Identificando os tipos de ossos presentes" />
-                    </div>
+                    {[1, 2, 3, 4].map((_, index) => (
+                        <div key={index} className="w-full flex flex-wrap justify-center items-center gap-12">
+                            <Livro src={Roboestan} title="Aspectos da engenharia robótica" />
+                            <Livro src={Programaestan} title="Linguagens de programação" />
+                            <Livro src={Biomestante} title="Fundamentos da biomedicina" />
+                            <Livro src={Mediestan} title="Identificando os tipos de ossos presentes" />
+                        </div>
+                    ))}
                 </div>
             </div>
-        </>
+
+            <Pagination totalPages={totalPages} currentPage={currentPage} onPageChange={handlePageChange} />
+        </div>
     );
 }
