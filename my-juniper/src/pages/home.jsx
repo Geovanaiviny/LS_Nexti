@@ -57,7 +57,7 @@ export default function Home(){
                 <Carraval/>
             </div>
 
-            <div className="mt-32 mb-32">
+            <div className="mt-32 //mb-32">
                 <Carrpubli/>
             </div>
         </div>

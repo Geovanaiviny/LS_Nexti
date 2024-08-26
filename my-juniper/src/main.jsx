@@ -10,6 +10,8 @@ import Corpoedito from './pages/corpoedi.jsx';
 import Quemsomos from './pages/quemsomos.jsx';
 import ErrorPage from './components/ErrorPage.jsx';  
 import Estante from './pages/Estante.jsx';
+import CatLivr1 from './components/cataloliv/CatLivr1.jsx';
+import PopUpBaixar from './components/cataloliv/PopUpBaixar.jsx';
 
 const router = createBrowserRouter([
   {
@@ -33,6 +35,14 @@ const router = createBrowserRouter([
       {
         path: 'estante',
         element: <Estante/>,
+      },
+      {
+        path: 'livro1',
+        element: <CatLivr1/>,
+      },
+      {
+        path:'popupbaixar',
+        element: <PopUpBaixar/>,
       },
     ],
   },
