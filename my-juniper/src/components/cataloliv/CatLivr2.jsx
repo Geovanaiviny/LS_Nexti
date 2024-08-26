@@ -1,7 +1,7 @@
 import React from "react";
 import { useNavigate } from 'react-router-dom';
 import Hlivros from '../../assets/img/hlivros.svg';
-import Capaliv2 from '../../assets/img/capalivr2.svg';
+import Capaliv1 from '../../assets/img/capaliv1.svg';
 import { styled } from '@mui/material/styles';
 import Button from '@mui/material/Button';
 import Setabranca from '../../assets/img_icon/setabranca.svg';
@@ -13,8 +13,6 @@ import Mediestan from '../../assets/img/mediestante.jpg';
 import Biomestante from '../../assets/img/biomestante.jpg';
 import PopupState, { bindTrigger, bindPopover } from 'material-ui-popup-state';
 import Popover from '@mui/material/Popover';
-import PopUpBaixar from "./PopUpBaixar";
-import { useState } from "react";
 
 // Estilização do botão
 const StyledButton = styled(Button)(({ theme }) => ({
@@ -42,19 +40,13 @@ export default function LivroDetalhes() {
 
     const navigate = useNavigate();
 
-    const [modal, setModal] = useState(0)
-
-
     const handleButtonClick = () => {
-        // navigate('/popupbaixar');
-        setModal(modal + 1)
+        navigate('/popupbaixar');
     };
 
     return (
         <>
             <div className="bg-[#F4F2EF] w-full">
-
-                
                 {/* Imagem header */}
                 <div className="relative text-center">
                     <img className="w-full h-auto" src={Hlivros} alt="Imagem Comum" />
@@ -65,16 +57,15 @@ export default function LivroDetalhes() {
                 </div>
 
                 {/* Container principal */}
-                {modal === 1 && <PopUpBaixar />}
                 <div className="flex flex-col justify-center items-center w-full h-auto py-10">
                     <div className="//bg-[#FFFFFF] flex flex-row justify-center w-[90%] h-auto p-10 //shadow-lg">
                         {/* Imagem do livro */}
-                        <img className="w-[30%] h-auto rounded-md" src={Capaliv2} alt="Capa do Livro" />
+                        <img className="w-[30%] h-auto rounded-md" src={Capaliv1} alt="Capa do Livro" />
 
                         {/* Informações do livro */}
                         <div className="ml-10 flex flex-col justify-start w-[60%]">
                             <h1 className="font-robotoserif text-[#131313] text-4xl font-semibold mb-4">
-                                Aspectos da engenharia robótica
+                                Explorando o Universo Java: Novas Fronteiras e Tendências
                             </h1>
 
                             <p className="font-worksans text-[#131313] text-2xl font-semibold mb-6">
@@ -86,11 +77,11 @@ export default function LivroDetalhes() {
                             </p>
 
                             <p className="font-worksans text-[#434343] text-xl font-medium mb-6">
-                                A engenharia robótica é uma disciplina multidisciplinar que integra conhecimentos de engenharia mecânica, elétrica, ciência da computação e controle, entre outros. 
+                                Este livro é uma chamada aberta para os profissionais e entusiastas da linguagem Java que buscam expandir seus horizontes e explorar as últimas tendências e desenvolvimentos no mundo da programação Java.
                             </p>
 
                             <p className="font-worksans text-[#434343] text-xl font-medium mb-8">
-                                Ela se dedica ao desenvolvimento, projeto, construção, operação e aplicação de robôs, que são sistemas automatizados capazes de realizar tarefas específicas, muitas vezes substituindo ou auxiliando o trabalho humano.
+                                Estamos à procura de contribuições que abordem temas avançados, inovadores e desafiadores relacionados ao ecossistema Java.
                             </p>
 
                             {/* Button */}
@@ -102,7 +93,7 @@ export default function LivroDetalhes() {
                         </div>
                     </div>
 
-                    <div className="flex items-end justify-center w-[50%] h-[1%] mt-8 mb-6">
+                    <div className="flex items-end justify-center w-[50%] h-[1%] mt-6 mb-6">
                         <img className="w-[490px]" src={Linecorpo} alt="" />
                     </div>
                 </div>

@@ -471,9 +471,9 @@ export default function Estante() {
             </div>
 
             {/* Container principal */}
-            <div className="//bg-black flex flex-col items-center justify-center w-full mb-14">
+            <div className="//bg-black flex flex-col items-center justify-center w-full h-auto mb-14">
                 {/* Quadrado branco */}
-                <div className="flex flex-col items-center justify-center bg-[#ffff] shadow-[0_8px_18px_-2px_rgba(104,154,212,0.85)] border-[0.1px] rounded-md border-[#dadada] w-[80%] min-h-full mb-12 gap-10">
+                <div className="flex flex-col items-center justify-center bg-[#ffff] shadow-[0_8px_18px_-2px_rgba(104,154,212,0.85)] border-[0.1px] rounded-md border-[#dadada] w-[80%] h-auto p-10 //min-h-full mb-12 gap-10">
                     {/* Fileiras de livros */}
                     {[1, 2, 3, 4].map((_, index) => (
                         <div key={index} className="w-full flex flex-wrap justify-center items-center gap-12">
