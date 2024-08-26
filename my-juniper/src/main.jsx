@@ -11,7 +11,9 @@ import Quemsomos from './pages/quemsomos.jsx';
 import ErrorPage from './components/ErrorPage.jsx';  
 import Estante from './pages/Estante.jsx';
 import CatLivr1 from './components/cataloliv/CatLivr1.jsx';
-import PopUpBaixar from './components/cataloliv/PopUpBaixar.jsx';
+import CatLivr2 from './components/cataloliv/CatLivr2.jsx';
+import PopUpBaixar from './components/cataloliv/PopUpBaixar.jsx'; 
+import PopUpCompra from './components/cataloliv/PopUpCompra.jsx';
 
 const router = createBrowserRouter([
   {
@@ -41,8 +43,16 @@ const router = createBrowserRouter([
         element: <CatLivr1/>,
       },
       {
+        path: 'livro2',
+        element: <CatLivr2/>
+      },
+      {
         path:'popupbaixar',
         element: <PopUpBaixar/>,
+      },
+      {
+        path:'popupcompra',
+        element: <PopUpCompra/>
       },
     ],
   },

@@ -13,6 +13,8 @@ import Mediestan from '../../assets/img/mediestante.jpg';
 import Biomestante from '../../assets/img/biomestante.jpg';
 import PopupState, { bindTrigger, bindPopover } from 'material-ui-popup-state';
 import Popover from '@mui/material/Popover';
+import PopUpBaixar from "./PopUpBaixar";
+import { useState } from "react";
 
 // Estilização do botão
 const StyledButton = styled(Button)(({ theme }) => ({
@@ -38,10 +40,18 @@ export default function LivroDetalhes() {
     //     popupState.open();
     // };
 
-    const navigate = useNavigate();
+    // const navigate = useNavigate();
+
+    // const handleButtonClick = () => {
+    //     navigate('/popupbaixar');
+    // };
+
+    const [modal, setModal] = useState(0)
+
 
     const handleButtonClick = () => {
-        navigate('/popupbaixar');
+        // navigate('/popupbaixar');
+        setModal(modal + 1)
     };
 
     return (
