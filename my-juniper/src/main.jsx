@@ -14,6 +14,7 @@ import CatLivr1 from './components/cataloliv/CatLivr1.jsx';
 import CatLivr2 from './components/cataloliv/CatLivr2.jsx';
 import PopUpBaixar from './components/cataloliv/PopUpBaixar.jsx'; 
 import PopUpCompra from './components/cataloliv/PopUpCompra.jsx';
+import ChamaAbert from './pages/ChamAbert.jsx'
 
 const router = createBrowserRouter([
   {
@@ -53,6 +54,10 @@ const router = createBrowserRouter([
       {
         path:'popupcompra',
         element: <PopUpCompra/>
+      },
+      {
+        path:'chamaabert',
+        element: <ChamaAbert/>
       },
     ],
   },

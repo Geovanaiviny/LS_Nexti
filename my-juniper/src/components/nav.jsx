@@ -91,7 +91,7 @@ export default function Nav() {
 
         <a onClick={() => navigate('/estante')} className="text-white cursor-pointer">Estante</a>
         <div className="text-white">Serviços</div>
-        <a href="" className="text-white">Chamadas abertas</a>
+        <a onClick={() => navigate('/chamaabert')} className="text-white cursor-pointer">Chamadas Abertas</a>
       </div>
     </nav>
   );
