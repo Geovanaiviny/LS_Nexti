@@ -35,19 +35,23 @@ const StyledButton = styled(Button)(({ theme }) => ({
 export default function LivroDetalhes() {
     // const navigate = useNavigate();
 
-    // const handlePopup = (popupState) => {
-    //     navigate('/popupbaixar');
-    //     popupState.open();
+    // const [modal, setModal] = useState(0)
+
+
+    // const handleButtonClick = () => {
+    //     // navigate('/popupbaixar');
+    //     setModal(modal + 1)
     // };
-
     const navigate = useNavigate();
-
-    const [modal, setModal] = useState(0)
-
-
+    const [modal, setModal] = useState(false);
+    
     const handleButtonClick = () => {
-        // navigate('/popupbaixar');
-        setModal(modal + 1)
+        // navigate('/popupbaixar')
+        setModal(true);
+    };
+
+    const closeModal = () => {
+        setModal(false);
     };
 
     return (
@@ -64,8 +68,8 @@ export default function LivroDetalhes() {
                     </h1>
                 </div>
 
-                {/* Container principal */}
-                {modal === 1 && <PopUpBaixar />}
+                {/* Container principal
+                {modal === 1 && <PopUpBaixar />} */}
                 <div className="flex flex-col justify-center items-center w-full h-auto py-10">
                     <div className="//bg-[#FFFFFF] flex flex-row justify-center w-[90%] h-auto p-10 //shadow-lg">
                         {/* Imagem do livro */}
@@ -253,6 +257,8 @@ export default function LivroDetalhes() {
                        </div>
                     </div>
                 </div>
+                    {/* Exibir o modal se `modal` for 1 */}
+                    {modal && <PopUpBaixar closeModal={closeModal}/>}
             </div>
         </>
     );

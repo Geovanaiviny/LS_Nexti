@@ -17,7 +17,7 @@ export default function Home(){
         <div className=" bg-[#F4F2EF] ">
 
             {/* Banner no início da Home */}
-            <div className="flex justify-center mt-4 //p-64">
+            <div className="flex justify-center //mt-4 //p-64">
                 <figure className="flex justify-center">
                     <img className="w-[1200px]    //w-[90%] //h-[20%]" src={Bannerh} alt="" />
                 </figure>

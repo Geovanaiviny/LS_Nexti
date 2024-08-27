@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import { useNavigate } from 'react-router-dom';
 import Hlivros from '../../assets/img/hlivros.svg';
 import Capaliv1 from '../../assets/img/capaliv1.svg';
@@ -11,10 +11,9 @@ import Roboestan from '../../assets/img/roboestante.jpg';
 import Programaestan from '../../assets/img/prograestante.jpg';
 import Mediestan from '../../assets/img/mediestante.jpg';
 import Biomestante from '../../assets/img/biomestante.jpg';
-import PopupState, { bindTrigger, bindPopover } from 'material-ui-popup-state';
-import Popover from '@mui/material/Popover';
-import PopUpBaixar from "./PopUpBaixar";
-import { useState } from "react";
+// import PopupState, { bindTrigger, bindPopover } from 'material-ui-popup-state';
+// import Popover from '@mui/material/Popover';
+import PopUpCompra from "./PopUpCompra";
 
 // Estilização do botão
 const StyledButton = styled(Button)(({ theme }) => ({
@@ -33,25 +32,17 @@ const StyledButton = styled(Button)(({ theme }) => ({
 }));
 
 export default function LivroDetalhes() {
-    // const navigate = useNavigate();
 
-    // const handlePopup = (popupState) => {
-    //     navigate('/popupbaixar');
-    //     popupState.open();
-    // };
-
-    // const navigate = useNavigate();
-
-    // const handleButtonClick = () => {
-    //     navigate('/popupbaixar');
-    // };
-
-    const [modal, setModal] = useState(0)
-
-
+    const navigate = useNavigate();
+    const [modal, setModal] = useState(false);
+    
     const handleButtonClick = () => {
-        // navigate('/popupbaixar');
-        setModal(modal + 1)
+        // navigate('/popupbaixar')
+        setModal(true);
+    };
+
+    const closeModal = () => {
+        setModal(false);
     };
 
     return (
@@ -254,6 +245,10 @@ export default function LivroDetalhes() {
                        </div>
                     </div>
                 </div>
+
+                    {/* Exibir o modal se `modal` for 1 */}
+                {modal && <PopUpCompra closeModal={closeModal}/>}
+
             </div>
         </>
     );
