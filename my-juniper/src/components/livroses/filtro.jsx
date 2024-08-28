@@ -254,7 +254,7 @@ export default function CustomizedMenus() {
       {/* Container completo filtro */}
       <div className='flex flex-col lg:flex-row items-center justify-center mb-12 lg:mb-24 gap-6'>
         {/* Quadrado Filtro */}
-        <div className='flex flex-col lg:flex-row justify-center items-center bg-[#ffff] shadow-[0_8px_16px_-7px_rgba(104,154,212,0.85)] border-[0.1px] rounded-md border-[#dadada] w-[90%] sm:w-[80%] lg:w-[80%] h-auto lg:h-[180px] max-h-screen gap-6 lg:gap-60'>
+        <div className='flex flex-col  min-[1366px]:gap-20  lg:flex-row justify-center items-center bg-[#ffff] shadow-[0_8px_16px_-7px_rgba(104,154,212,0.85)] border-[0.1px] rounded-md border-[#dadada] w-[90%] sm:w-[80%] lg:w-[80%] h-auto lg:h-[180px] max-h-screen gap-6 lg:gap-60'>
           {/* Select */}
           <div className='w-full lg:w-auto'>
             <h4 className='font-robotoserif text-[1rem] sm:text-[1.2rem] lg:text-[1.4rem] font-semibold mb-2 sm:mb-4 text-[#535353]'>
