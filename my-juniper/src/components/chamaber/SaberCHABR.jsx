@@ -32,7 +32,7 @@ export default function ChamAbert(){
                     <img className="w-full h-auto" src={Hlivros} alt="Imagem Comum" />
                     <h1 className="text-4xl sm:text-5xl md:text-6xl font-robotoserif font-semibold text-[#F4F2EF] absolute"
                         style={{ top: '50%', left: '30%', transform: 'translate(-50%, -50%)' }}>
-                        Estante
+                        Chamadas abertas
                     </h1>
                 </div>
         </>
