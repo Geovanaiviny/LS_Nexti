@@ -1,0 +1,6 @@
+{
+  "dependencies": {
+    "lucide": "^0.433.0",
+    "react": "^18.3.1"
+  }
+}
