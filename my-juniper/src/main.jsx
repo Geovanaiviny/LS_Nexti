@@ -16,6 +16,7 @@ import PopUpBaixar from './components/cataloliv/PopUpBaixar.jsx';
 import PopUpCompra from './components/cataloliv/PopUpCompra.jsx';
 import ChamaAbert from './pages/ChamAbert.jsx';
 import PChamaber from './components/chamaber/SaberCHABR.jsx';
+import Avaliacoes from './pages/Avaliacoes.jsx'
 
 const router = createBrowserRouter([
   {
@@ -63,6 +64,10 @@ const router = createBrowserRouter([
       {
         path: 'pchamaber1',
         element: <PChamaber/>,
+      },
+      {
+        path: 'avaliacoes',
+        element: <Avaliacoes/>,
       },
     ],
   },
