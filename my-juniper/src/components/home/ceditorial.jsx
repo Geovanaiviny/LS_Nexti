@@ -35,8 +35,8 @@ export default function Ceditorial (){
 
     return (
         <>
-        <div className="flex bg-black justify-center">
-            <div className="flex gap-5 justify-around items-center bg-transparent border-2 border-y-[#3F3F3F] border-l-[0] border-r-[0] w-[90%] max-w-7xl //h-[90%] max-h-screen">
+        <div className="flex //bg-black justify-center">
+            <div className="flex gap-5 justify-around items-center bg-transparent border-2 border-y-[#3F3F3F] border-l-[0] border-r-[0] w-[90%] max-w-7xl //h-[90%] h-[500px] max-h-screen">
                 <div className=" flex gap-10 flex-col justify-center h-1 w-[24rem] ">
                     <h1 className=" text-5xl font-robotoserif font-semibold  text-[#434343]">
                         Conheça nosso corpo editorial

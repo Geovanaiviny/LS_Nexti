@@ -32,7 +32,8 @@ import { styled } from '@mui/material/styles';
 
 const StyledCard = styled(Card)(({ theme }) => ({
   position: 'relative',
-  width: 360,
+  width: '90%',
+  maxWidth:320,
   height: 400,
   display: 'flex',
   flexDirection: 'column',
@@ -49,6 +50,13 @@ const StyledCard = styled(Card)(({ theme }) => ({
     bottom: 0,
     left: 0,
     backgroundColor: 'rgba(0, 0, 0, 0.4)',
+  },
+  [theme.breakpoints.up('sm')]: { // Telas pequenas e maiores
+    width: '80%',
+    maxWidth: '320px',
+  },
+  [theme.breakpoints.up('md')]: { // Tablets e telas maiores
+    width: '320px',
   },
 }));
 
@@ -70,6 +78,7 @@ const StyledButton = styled(Button)(({ theme }) => ({
         backgroundColor: '#757575',
         borderColor: '#c06f24',
   },
+
 }));
 
 const StyledTypography = styled(Typography)(({ theme }) => ({

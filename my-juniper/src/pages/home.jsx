@@ -17,11 +17,22 @@ export default function Home(){
         <div className=" bg-[#F4F2EF] ">
 
             {/* Banner no início da Home */}
-            <div className=" //bg-black flex justify-center w-full //mt-4 //p-64">
+            {/* <div className=" //bg-black flex justify-center w-full //mt-4 //p-64">
                 <figure className="flex justify-center w-[90%]">
-                    <img className="//w-[1200px]    w-[80%] //h-[20%]" src={Bannerh} alt="" />
+                    <img className="//w-[1200px] w-[90%] //h-[20%]" src={Bannerh} alt="" />
                 </figure>
-            </div>
+            </div> */}
+
+                <div className="flex justify-center w-full">
+                    <figure className="flex justify-center w-[90%]">
+                        <img 
+                            className="w-[100%] md:w-[90%] lg:w-[90%] h-auto" 
+                            src={Bannerh} 
+                            alt="" 
+                        />
+                    </figure>
+                </div>
+
 
             {/* Imagem para autores publicarem */}
             {/* Imagem para ir a Estante */}
