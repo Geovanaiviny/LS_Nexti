@@ -38,7 +38,7 @@ export default function Home(){
             {/* Imagem para ir a Estante */}
             {/* {lalal} */}
 
-            <div className="flex justify-center //justify-around space-x-[3.6rem] mt-10 ">
+            <div className="flex justify-center //justify-around space-x-[4rem] mt-10 ">
                 <div>
                     <Boxpublique />
                 </div>

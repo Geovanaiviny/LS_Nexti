@@ -11,8 +11,8 @@ import { styled } from '@mui/material/styles';
 const StyledCard = styled(Card)(({ theme }) => ({
   position: 'relative',
   width: '90%',
-  maxWidth: 320,
-  height: 400,
+  maxWidth: 340,
+  height: 440,
   display: 'flex',  
   flexDirection: 'column',
   justifyContent: 'flex-end',
@@ -31,10 +31,10 @@ const StyledCard = styled(Card)(({ theme }) => ({
   },
   [theme.breakpoints.up('sm')]: { // Telas pequenas e maiores
     width: '80%',
-    maxWidth: '320px',
+    maxWidth: '360px',
   },
   [theme.breakpoints.up('md')]: { // Tablets e telas maiores
-    width: '320px',
+    width: '360px',
   },
 }));
 
