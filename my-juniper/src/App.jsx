@@ -12,6 +12,7 @@ import Politicaprivacidade from './pages/politicaprivada.jsx';
 import Perguntasfrequentes from './pages/perguntasfrequentes.jsx';
 
 
+
 // import Select from './componentes_options/Select.jsx';
 
 

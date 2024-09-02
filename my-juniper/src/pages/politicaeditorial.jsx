@@ -33,5 +33,26 @@ export default function Politicaeditorial(){
     
     </>
 
+
+
+
   )
 }
+
+
+
+
+const faqData = [
+  {
+    question: 'Como publicar nessa editora?',
+    answer: 'Para publicar conosco, primeiro, fique atento às nossas chamadas abertas, onde autores têm a oportunidade de submeter seus trabalhos.Envie seu arquivo original durante o período designado e sua obra será avaliada. Posteriormente, você receberá uma resposta de acordo com o resultado da avaliação.',
+  },
+  {
+    question: 'Como publicar nessa editora?',
+    answer: 'Para publicar conosco, primeiro, fique atento às nossas chamadas abertas, onde autores têm a oportunidade de submeter seus trabalhos.Envie seu arquivo original durante o período designado e sua obra será avaliada. Posteriormente, você receberá uma resposta de acordo com o resultado da avaliação',
+  },
+  {
+    question: 'como publicar nessa editora?',
+    answer: 'Para publicar conosco, primeiro, fique atento às nossas chamadas abertas, onde autores têm a oportunidade de submeter seus trabalhos.Envie seu arquivo original durante o período designado e sua obra será avaliada. Posteriormente, você receberá uma resposta de acordo com o resultado da avaliação',
+  },
+];
