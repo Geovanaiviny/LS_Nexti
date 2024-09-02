@@ -144,10 +144,10 @@ export default function Nav() {
           >
             <MenuItem value={"quemsomos"}>Quem somos nós</MenuItem>
             <MenuItem value={"corpoedito"}>Corpo Editorial</MenuItem>
-            <MenuItem value={"perguntasfrequentes"}>Perguntas Frequentes</MenuItem>
-            <MenuItem value={"codigodeetica"}>Código de Ética</MenuItem>
-            <MenuItem value={"politicadeprivacidade"}>Política de Privacidade</MenuItem>
-            <MenuItem value={"politicaeditorial"}>Política Editorial</MenuItem>
+            <MenuItem value={"perfrequentes"}>Perguntas Frequentes</MenuItem>
+            <MenuItem value={"codigoetica"}>Código de Ética</MenuItem>
+            <MenuItem value={"poliprivada"}>Política de Privacidade</MenuItem>
+            <MenuItem value={"politeditorial"}>Política Editorial</MenuItem>
           </Select>
         </FormControl>
 
@@ -171,6 +171,9 @@ export default function Nav() {
           <a onClick={() => { navigate('/estante'); toggleMenu(); }} className="text-white cursor-pointer">Estante</a>
           <a onClick={() => { navigate('/servicos'); toggleMenu(); }} className="text-white cursor-pointer">Serviços</a>
           <a onClick={() => { navigate('/chamaabert'); toggleMenu(); }} className="text-white cursor-pointer">Chamadas Abertas</a>
+          <a onClick={() => { navigate('/codigoetica'); toggleMenu(); }} className="text-white cursor-pointer">Código de Ética</a>
+          <a onClick={() => { navigate('/perfrequentes'); toggleMenu(); }} className="text-white cursor-pointer">Perguntas Frequentes</a>
+
         </div>
       )}
     </nav>

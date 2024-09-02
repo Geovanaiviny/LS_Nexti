@@ -16,7 +16,11 @@ import PopUpBaixar from './components/cataloliv/PopUpBaixar.jsx';
 import PopUpCompra from './components/cataloliv/PopUpCompra.jsx';
 import ChamaAbert from './pages/ChamAbert.jsx';
 import PChamaber from './components/chamaber/SaberCHABR.jsx';
-import Avaliacoes from './pages/Avaliacoes.jsx'
+import Avaliacoes from './pages/Avaliacoes.jsx';
+import CodigoEtic from './pages/codigodeetica.jsx';
+import PerFrequentes from './pages/perguntasfrequentes.jsx';
+import PEditorial from './pages/politicaeditorial.jsx';
+import Pprivada from './pages/politicaprivada.jsx';
 
 const router = createBrowserRouter([
   {
@@ -68,6 +72,22 @@ const router = createBrowserRouter([
       {
         path: 'avaliacoes',
         element: <Avaliacoes/>,
+      },
+      {
+        path: 'codigoetica',
+        element: <CodigoEtic/>,
+      },
+      {
+        path: 'perfrequentes',
+        element: <PerFrequentes/>,
+      },
+      {
+        path: 'politeditorial',
+        element: <PEditorial/>,
+      },
+      {
+        path: 'poliprivada',
+        element: <Pprivada/>,
       },
     ],
   },

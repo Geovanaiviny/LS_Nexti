@@ -26,7 +26,7 @@ function App() {
     <Header />
     {/* <Body/> */}
     {/* <Quemsomos/> */}
-    <Coreditorial />
+    {/* <Coreditorial /> */}
 
     <Footer />
   </div>

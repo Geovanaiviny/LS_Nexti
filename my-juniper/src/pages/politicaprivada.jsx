@@ -1,7 +1,6 @@
 import React from "react";
 import Hcomum from "../assets/img/hcomum.png";
-import Footer from "../components/footer";
-import Header from "../components/header";
+
 
 
 export default function Politicaprivacidade(){
@@ -70,7 +69,7 @@ export default function Politicaprivacidade(){
           </div>
         </div>
 
-        <div className="flex justify-center w-full mt-32 mb-24">
+        <div className="flex justify-center w-full mt-32 pb-24 ">
           <div className="w-2/3 max-w-screen-2xl">
           <p className="font-worksans font-medium text-[22px] text-[#535353]">A Editora Learn Skills valoriza e respeita a privacidade de seus usuários, autores e parceiros. Esta Política de Privacidade descreve como coletamos, usamos, compartilhamos e protegemos as informações pessoais que você fornece quando utiliza nossos serviços ou visita nosso site.</p>
           </div>
