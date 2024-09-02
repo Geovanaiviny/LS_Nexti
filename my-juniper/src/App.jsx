@@ -24,13 +24,10 @@ function App() {
   <>
   <div className="bg-[#F4F2EF] min-h-screen">
     <Header />
-    <Perguntasfrequentes/>
-    {/* <Codigodeetica/> */}
-    {/* <Body /> */}
-    {/* <Coreditorial/> */}
+    {/* <Body/> */}
     {/* <Quemsomos/> */}
-    {/* <Coreditorial /> */}
-    {/* <Codigoetic/> */}
+    <Coreditorial />
+
     <Footer />
   </div>
   </>

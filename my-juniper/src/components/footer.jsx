@@ -5,9 +5,9 @@ import Linefoot from "../assets/img_icon/linefoot.jpg";
 
 const Footer = () => {
   return (
-    <footer className="bg-[#213E60] text-white py-2">
+    <footer className="bg-[#213E60] text-white py-6">
       <div className="container mx-auto px-4 flex flex-col md:flex-row justify-between">
-        <div className="mb-6 md:mb-0 ml-20 mt-4">
+        <div className="mb-6 md:mb-0 md:ml-20 mt-4">
           <h6 className="font-semibold text-[22px] mb-2">Navegação</h6>
           <ul className="font-worksans font-medium text-lg flex flex-col mt-10">
             <li className="mb-3 text-[#F4F2EF] hover:text-[#D8D1BD]"><a href="#">Home</a></li>
@@ -34,7 +34,7 @@ const Footer = () => {
             </li>
           </ul>
         </div>
-        <div className="mb-6 md:mb-0 mt-4 mr-[90px]">
+        <div className="mb-6 md:mb-0 mt-4 md:mr-[90px]">
           <h6 className="font-semibold text-[22px] mb-2">Endereço</h6>
           <p className="mb-3 flex items-center font-worksans font-medium text-lg">
             Juazeiro do Norte - <br />
@@ -42,19 +42,18 @@ const Footer = () => {
           </p>
         </div>
       </div>
-      <div className="flex items-end justify-end h-12 w-44 ml-[1250px]">
-        <figure className="flex justify-end">
-          <img className="flex h-[130px] w-[150px]" src={Logofoot} />
+
+      <div className="flex items-center justify-center md:justify-end h-12 w-full md:mr-28 mt-6">
+        <figure className="flex justify-center md:justify-end">
+          <img className="h-[130px] w-[150px]" src={Logofoot} />
         </figure>
       </div>
       
-      <div className="flex justify-center">
-        <figure>
-          <img className="w-[86rem]" src={Linefoot} />
-        </figure>
+      <div className="w-full flex justify-center mt-6">
+        <img className="w-[90%] md:w-[85%]" src={Linefoot} />
       </div>
 
-      <div className="border-t border-gray-700 mt-6 pt-4 text-center">
+      <div className="mt-4 pt-6 text-center">
         <p>© 2020-2024 Created by Editora Learn Skills</p>
       </div>
     </footer>

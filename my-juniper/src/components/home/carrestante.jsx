@@ -28,48 +28,49 @@ const images = [
 ];
 
 const getStyleByAlt = (alt) => {
-    switch (alt) {
-        case 'Image 1':
-            return {
-                imageStyle: { height: '230px', width: '190px', marginLeft: '16px', marginTop: '6px', borderRadius: '2px'},
-                boxStyle: { backgroundColor:'#F4F2EF', border: ' 1px solid #C0C0C0',  borderRadius: '4px', padding: '4px', height:'324px', boxShadow: ' 3px 3px 10px -3px rgba(0, 0, 0, 0.25)', marginTop: '-8px'},
-                textStyle: { fontFamily: 'Work Sans', fontWeight: 500, color: '#5E5E5E', padding: '14px 0 0 10px '},
-                text: "Identificando os tipos de ossos presen...",
-            };
-
-        case 'Image 2':
-            return {
-              imageStyle: { height: '230px', width: '190px', marginLeft: '16px', marginTop: '6px', borderRadius: '2px'},
-              boxStyle: { backgroundColor:'#F4F2EF', border: ' 1px solid #C0C0C0',  borderRadius: '4px', padding: '4px', height:'324px', boxShadow: ' 3px 3px 10px -3px rgba(0, 0, 0, 0.25)', marginTop: '-8px'},
-              textStyle: { fontFamily: 'Work Sans', fontWeight: 500, color: '#5E5E5E', padding: '14px 0 0 10px '},
-              text: "Fundamentos da Biomedicina...",
-            };
-
-        case 'Image 3':
-            return {
-              imageStyle: { height: '230px', width: '190px', marginLeft: '16px', marginTop: '6px', borderRadius: '2px'},
-              boxStyle: { backgroundColor:'#F4F2EF', border: ' 1px solid #C0C0C0',  borderRadius: '4px', padding: '4px', height:'324px', boxShadow: ' 3px 3px 10px -3px rgba(0, 0, 0, 0.25)', marginTop: '-8px'},
-              textStyle: { fontFamily: 'Work Sans', fontWeight: 500, color: '#5E5E5E', padding: '14px 0 0 10px '},
-              text: "Aspectos da engenharia robótica...",
-            };
-
-        case 'Image 4':
-            return {
-              imageStyle: { height: '230px', width: '190px', marginLeft: '16px', marginTop: '6px', borderRadius: '2px'},
-              boxStyle: { backgroundColor:'#F4F2EF', border: ' 1px solid #C0C0C0',  borderRadius: '4px', padding: '4px', height:'324px', boxShadow: ' 3px 3px 10px -3px rgba(0, 0, 0, 0.25)', marginTop: '-8px'},
-              textStyle: { fontFamily: 'Work Sans', fontWeight: 500, color: '#5E5E5E', padding: '14px 0 0 10px '},
-              text: "Linguagens de programação...",
-            };
-
-        default: 
-            return {
-              imageStyle: { height: '230px', width: '190px', marginLeft: '16px', marginTop: '6px', borderRadius: '2px'},
-              boxStyle: { backgroundColor:'#F4F2EF', border: ' 1px solid #C0C0C0',  borderRadius: '4px', padding: '4px', height:'324px', boxShadow: ' 3px 3px 10px -3px rgba(0, 0, 0, 0.25)', marginTop: '-8px'},
-              textStyle: { fontFamily: 'Work Sans', fontWeight: 500, color: '#5E5E5E', padding: '14px 0 0 10px '},
+  switch (alt) {
+      case 'Image 1':
+          return {
+              imageStyle: { height: '230px', width: '190px', marginLeft: '16px', marginTop: '6px', borderRadius: '2px' },
+              boxStyle: { backgroundColor: '#F4F2EF', border: '1px solid #C0C0C0', borderRadius: '4px', padding: '4px', height: '324px', width: '220px', boxShadow: '3px 3px 10px -3px rgba(0, 0, 0, 0.25)', marginTop: '-8px' },
+              textStyle: { fontFamily: 'Work Sans', fontWeight: 500, color: '#5E5E5E', padding: '14px 0 0 10px ' },
               text: "Identificando os tipos de ossos presen...",
-            };
-    }
+          };
+
+      case 'Image 2':
+          return {
+              imageStyle: { height: '230px', width: '190px', marginLeft: '16px', marginTop: '6px', borderRadius: '2px' },
+              boxStyle: { backgroundColor: '#F4F2EF', border: '1px solid #C0C0C0', borderRadius: '4px', padding: '4px', height: '324px', width: '220px', boxShadow: '3px 3px 10px -3px rgba(0, 0, 0, 0.25)', marginTop: '-8px' },
+              textStyle: { fontFamily: 'Work Sans', fontWeight: 500, color: '#5E5E5E', padding: '14px 0 0 10px ' },
+              text: "Fundamentos da Biomedicina...",
+          };
+
+      case 'Image 3':
+          return {
+              imageStyle: { height: '230px', width: '190px', marginLeft: '16px', marginTop: '6px', borderRadius: '2px' },
+              boxStyle: { backgroundColor: '#F4F2EF', border: '1px solid #C0C0C0', borderRadius: '4px', padding: '4px', height: '324px', width: '220px', boxShadow: '3px 3px 10px -3px rgba(0, 0, 0, 0.25)', marginTop: '-8px' },
+              textStyle: { fontFamily: 'Work Sans', fontWeight: 500, color: '#5E5E5E', padding: '14px 0 0 10px ' },
+              text: "Aspectos da engenharia robótica...",
+          };
+
+      case 'Image 4':
+          return {
+              imageStyle: { height: '230px', width: '190px', marginLeft: '16px', marginTop: '6px', borderRadius: '2px' },
+              boxStyle: { backgroundColor: '#F4F2EF', border: '1px solid #C0C0C0', borderRadius: '4px', padding: '4px', height: '324px', width: '220px', boxShadow: '3px 3px 10px -3px rgba(0, 0, 0, 0.25)', marginTop: '-8px' },
+              textStyle: { fontFamily: 'Work Sans', fontWeight: 500, color: '#5E5E5E', padding: '14px 0 0 10px ' },
+              text: "Linguagens de programação...",
+          };
+
+      default: 
+          return {
+              imageStyle: { height: '230px', width: '190px', marginLeft: '16px', marginTop: '6px', borderRadius: '2px' },
+              boxStyle: { backgroundColor: '#F4F2EF', border: '1px solid #C0C0C0', borderRadius: '4px', padding: '4px', height: '324px', width: '220px', boxShadow: '3px 3px 10px -3px rgba(0, 0, 0, 0.25)', marginTop: '-8px' },
+              textStyle: { fontFamily: 'Work Sans', fontWeight: 500, color: '#5E5E5E', padding: '14px 0 0 10px ' },
+              text: "Identificando os tipos de ossos presen...",
+          };
+  }
 };
+
 
 export default function Carrosel() {
   const [currentIndex, setCurrentIndex] = useState(0);
@@ -99,11 +100,11 @@ export default function Carrosel() {
       </div>
       
       <div className="flex flex-col items-center min-h-screen">
-        <div className="relative border-[4px] border-[#E68C3A] bg-[40px] p-10 w-[1200px] rounded-lg shadow-xl max-w-7xl overflow-hidden">
+        <div className="relative border-[4px] border-[#E68C3A] bg-[40px] py-10 px  //p-10 w-[1090px] rounded-lg shadow-xl max-w-7xl overflow-hidden">
           <div className="flex transition-transform duration-1000 ease-in-out"
                style={{ transform: `translateX(-${currentIndex * 100}%)` }}>
             {slides.map((slide, index) => (
-              <div key={index} className="flex w-full flex-none gap-6">
+              <div key={index} className="flex w-full flex-none gap-4">
                 {slide.map((image, idx) => {
                   const { imageStyle, boxStyle, textStyle, text } = getStyleByAlt(image.alt);
                   return (

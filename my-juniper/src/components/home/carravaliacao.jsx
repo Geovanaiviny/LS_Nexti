@@ -4,6 +4,7 @@ import Button from '@mui/material/Button';
 import Avatar1 from "../../assets/img/avatar1.png";
 import Avatar2 from "../../assets/img/avatar2.png";
 import Avatar3 from "../../assets/img/avatar3.png";
+import { useNavigate } from "react-router-dom";
 
 const testimonialStyle = {
   container: {
@@ -166,6 +167,12 @@ export default function TestimonialsCarousel() {
 
   const slides = Array(3).fill(testimonials);
 
+  const navigate = useNavigate();
+
+  const handleButtonClick = () => {
+      navigate('/avaliacoes');
+  };
+
   return (
     <>
       <div className="bg-black" style={testimonialStyle.container}>
@@ -218,13 +225,13 @@ export default function TestimonialsCarousel() {
           </div>
         </div>
 
-        <div className="flex gap-[400px] justify-between mt-6">
+        <div className="flex gap-[400px] mt-6">
           <div className="min-h-1 mt-6">
             <StyledButton variant="samais">Envie seu depoimento</StyledButton>
           </div>
 
           <div className="min-h-1 mt-6">
-            <StyledButton variant="samais">Confira outros depoimentos</StyledButton>
+            <StyledButton variant="samais" onClick={handleButtonClick}>Confira outros depoimentos</StyledButton>
           </div>
         </div>
       </div>

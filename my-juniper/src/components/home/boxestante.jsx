@@ -7,11 +7,13 @@ import Button from '@mui/material/Button';
 import Typography from '@mui/material/Typography';
 import Hestante from '../../assets/img/hestante.jpg'
 import { styled } from '@mui/material/styles';
+import { useNavigate } from "react-router-dom";
 
 const StyledCard = styled(Card)(({ theme }) => ({
   position: 'relative',
-  width: 360,
-  height: 400,
+  width: '90%',
+  maxWidth: 340,
+  height: 440,
   display: 'flex',
   flexDirection: 'column',
   justifyContent: 'flex-end',
@@ -27,6 +29,13 @@ const StyledCard = styled(Card)(({ theme }) => ({
     bottom: 0,
     left: 0,
     backgroundColor: 'rgba(0, 0, 0, 0.4)',
+  },
+  [theme.breakpoints.up('sm')]: { // Telas pequenas e maiores
+    width: '80%',
+    maxWidth: '360px',
+  },
+  [theme.breakpoints.up('md')]: { // Tablets e telas maiores
+    width: '360px',
   },
 }));
 
@@ -59,6 +68,13 @@ const StyledTypography = styled(Typography)(({ theme }) => ({
 }));
 
 export default function Boxestante() {
+  const navigate = useNavigate();
+
+  const handleButtonClick = () => {
+      navigate('/estante');
+  };
+
+
   return (
     <StyledCard>
       <ContentWrapper>
@@ -68,7 +84,7 @@ export default function Boxestante() {
           </StyledTypography>
         </CardContent>
         <CardActions>
-          <StyledButton size="small" sx={{ fontFamily: 'Work Sans', fontSize: 14 }}>
+          <StyledButton size="small" sx={{ fontFamily: 'Work Sans', fontSize: 14 }} onClick={handleButtonClick}>
             Saiba mais
           </StyledButton>
         </CardActions>
