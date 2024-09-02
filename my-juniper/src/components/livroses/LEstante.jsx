@@ -368,9 +368,9 @@ const Livro = ({ src, title, route }) => {
     const navigate = useNavigate();
 
     return (
-        <div className="bg-[#fafaf9] flex flex-col justify-center items-center shadow-[0_8px_10px_-7px_rgba(94,94,94,0.87)] border-[0.1px] rounded-md border-[#dfdfdf] w-[18%] max-w-[300px] h-[400px] max-h-screen gap-2">
+        <div className="bg-[#fafaf9] flex flex-col justify-center items-center shadow-[0_8px_10px_-7px_rgba(94,94,94,0.87)] border-[0.1px] rounded-md border-[#dfdfdf] w-[22%] max-w-[300px] h-[440px] max-h-screen gap-2">
             <div className="flex flex-col justify-center items-center w-[90%] h-[80%] gap-4">
-                <img className="w-[90%] h-[80%]  //w-[200px] //h-[240px] rounded-md" src={src} alt={title} />
+                <img className="w-[90%] h-[80%] rounded-md" src={src} alt={title} />
                 <h2 className="w-full font-worksans text-[18px] font-medium text-[#828282]">
                     {title}
                 </h2>
@@ -473,12 +473,12 @@ export default function Estante() {
             {/* Container principal */}
             <div className="flex flex-col items-center justify-center w-full h-auto mb-14">
                 {/* Quadrado branco */}
-                <div className="flex flex-col items-center justify-center bg-[#ffff] shadow-[0_8px_18px_-2px_rgba(104,154,212,0.85)] border-[0.1px] rounded-md border-[#dadada] w-[80%] h-auto p-10 mb-12 gap-10">
+                <div className="flex flex-col items-center justify-center bg-[#ffff] shadow-[0_8px_18px_-2px_rgba(104,154,212,0.85)] border-[0.1px] rounded-md border-[#dadada] w-[80%] h-auto py-12 mb-12 gap-12">
                     {/* Fileiras de livros */}
                     {[1, 2, 3, 4].map((_, index) => (
                         <div 
                             key={index} 
-                            className="w-full flex flex-wrap justify-center items-center gap-12"
+                            className="w-[90%] flex flex-wrap justify-center items-center gap-12"
                         >
                             <Livro src={Roboestan} title="Aspectos da engenharia robótica" route="/livro1/" />
                             <Livro src={Programaestan} title="Linguagens de programação" route={"/livro2"} />

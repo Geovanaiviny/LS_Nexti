@@ -29,6 +29,7 @@ import Button from '@mui/material/Button';
 import Typography from '@mui/material/Typography';
 import Hpublin from '../../assets/img/hpublin.jpg';
 import { styled } from '@mui/material/styles';
+import { useNavigate } from "react-router-dom";
 
 const StyledCard = styled(Card)(({ theme }) => ({
   position: 'relative',
@@ -90,6 +91,15 @@ const StyledTypography = styled(Typography)(({ theme }) => ({
 }));
 
 export default function BasicCard() {
+
+  const navigate = useNavigate();
+
+  const handleButtonClick = () => {
+      navigate('/');
+  };
+
+
+
   return (
     <StyledCard>
       <ContentWrapper>
@@ -99,7 +109,7 @@ export default function BasicCard() {
           </StyledTypography>
         </CardContent>
         <CardActions>
-          <StyledButton size="small" sx={{ fontFamily: 'Work Sans', fontSize: 14 }}>
+          <StyledButton size="small" sx={{ fontFamily: 'Work Sans', fontSize: 14 }} onClick={handleButtonClick}>
             Saiba mais
           </StyledButton>
         </CardActions>
