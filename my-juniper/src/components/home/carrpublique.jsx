@@ -21,7 +21,6 @@ const CarouselComponent = () => {
       img: Imacarrpubli,
       title: "Publique seu livro conosco",
       description: "Faça parte de uma comunidade apaixonada pela palavra escrita. Nossa equipe editorial está pronta para elevar seu trabalho a novos horizontes."
-      
     },
     {
       img: Imacarrpubli,
@@ -63,28 +62,30 @@ const CarouselComponent = () => {
   };
 
   return (
-    <div className="container mx-auto py-10 //my-10">
-      <Carousel
-        selectedItem={currentIndex}
-        showThumbs={false}
-        showStatus={false}
-        showArrows={false}
-        infiniteLoop
-        autoPlay={false} 
-      >
-        {slides.map((slide, index) => (
-          <div className="relative" key={index}>
-            <img className="h-[36rem] w-full object-cover" src={slide.img} alt={`Carousel Slide ${index + 1}`} />
-            <div className="absolute inset-0 bg-black bg-opacity-30 flex flex-col justify-center items-start p-10">
-              <h2 className="text-white font-robotoserif text-5xl font-bold text-left">{slide.title}</h2>
-              <p className="text-white font-worksans text-[24px] font-medium text-left max-w-[50%] sm:max-w-full">
-                {slide.description}
-              </p>
+    <div className="container mx-auto py-10 flex flex-col items-center">
+      <div className="w-[90%]">
+        <Carousel
+          selectedItem={currentIndex}
+          showThumbs={false}
+          showStatus={false}
+          showArrows={false}
+          infiniteLoop
+          autoPlay={false}
+        >
+          {slides.map((slide, index) => (
+            <div className="relative" key={index}>
+              <img className="h-[36rem] w-full object-cover" src={slide.img} alt={`Carousel Slide ${index + 1}`} />
+              <div className="absolute inset-0 bg-black bg-opacity-30 flex flex-col justify-center items-start p-10">
+                <h2 className="text-white font-robotoserif text-5xl font-bold text-left">{slide.title}</h2>
+                <p className="text-white font-worksans text-[24px] font-medium text-left max-w-[50%] sm:max-w-full">
+                  {slide.description}
+                </p>
+              </div>
             </div>
-          </div>
-        ))}
-      </Carousel>
-      <div className="min-h-1 mt-14 flex justify-start">
+          ))}
+        </Carousel>
+      </div>
+      <div className="min-h-1 mt-14 flex justify-start w-[90%]">
         <StyledButton variant="samais" onClick={handleButtonClick}>Saiba mais</StyledButton>
       </div>
     </div>
