@@ -37,7 +37,7 @@ export default function Codigodeetica(){
           </div>
         </div>
 
-        <div className="flex justify-center w-full mt-16 mb-16 ">
+        <div className="flex justify-center w-full mt-16 pb-16 //mb-16 ">
           <div className="w-2/3 max-w-screen-xl">
             <div className="flex flex-col justify-center space-y-4 ">
               <h1 className="font-robotoserif font-semibold text-[44px] text-[#213E60] mb-6">Autores</h1>

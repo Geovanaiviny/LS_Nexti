@@ -99,12 +99,12 @@ export default function Carrosel() {
         </h1>
       </div>
       
-      <div className="flex flex-col items-center min-h-screen">
-        <div className="relative border-[4px] border-[#E68C3A] bg-[40px] py-10 px  //p-10 w-[1090px] rounded-lg shadow-xl max-w-7xl overflow-hidden">
-          <div className="flex transition-transform duration-1000 ease-in-out"
+      <div className="flex flex-col items-center min-h-screen w-full">
+        <div className="relative border-[4px] border-[#E68C3A] bg-[40px] py-10 px-2 //p-10 w-[70%] //w-[1100px] rounded-lg shadow-xl max-w-7xl overflow-hidden">
+          <div className="flex transition-transform duration-1000 ease-in-out w-[1160px]"
                style={{ transform: `translateX(-${currentIndex * 100}%)` }}>
             {slides.map((slide, index) => (
-              <div key={index} className="flex w-full flex-none gap-4">
+              <div key={index} className="flex w-full flex-none gap-8">
                 {slide.map((image, idx) => {
                   const { imageStyle, boxStyle, textStyle, text } = getStyleByAlt(image.alt);
                   return (

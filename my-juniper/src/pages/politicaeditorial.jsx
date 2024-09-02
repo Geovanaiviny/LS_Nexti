@@ -16,7 +16,7 @@ export default function Politicaeditorial(){
             </h1>
         </div>
 
-        <div className="flex justify-center w-full mt-16 mb-16">
+        <div className="flex justify-center w-full mt-16 pb-16 //mb-16">
           <div className="w-2/3 max-w-screen-2xl space-y-10">
           <p className="font-worksans font-medium text-[22px] text-[#535353]">A Editora Learn Skills está comprometida em oferecer materiais educacionais de alta qualidade e relevância para os nossos leitores. Nossa política editorial é baseada em princípios fundamentais que orientam todas as nossas atividades editoriais.</p>
           <p className="font-worksans font-medium text-[22px] text-[#535353]">Nosso compromisso principal é com a excelência acadêmica. Todos os materiais publicados pela Editora Learn Skills são cuidadosamente revisados e desenvolvidos por especialistas em suas respectivas áreas, garantindo que atendam aos mais altos padrões de qualidade.</p>
