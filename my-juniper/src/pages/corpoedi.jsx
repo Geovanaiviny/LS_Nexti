@@ -40,14 +40,14 @@ export default function Coreditorial() {
                 <div className="flex flex-col items-start justify-center gap-4 px-4">
 
                     {/* título */}
-                    <div className="flex justify-center items-center mt-8 sm:mt-12 md:mt-20 ml-32">
+                    <div className="flex justify-center items-center mt-8 sm:mt-12 md:mt-20 ml-40">
                         <h1 className="text-3xl sm:text-4xl md:text-5xl font-robotoserif font-semibold text-[#213E60]">
                             Corpo Editorial
                         </h1>
                     </div>
 
                     {/* Seção contendo o quadrado branco e a imagem */}
-                    <div className="flex flex-col sm:flex-row items-center justify-center w-full gap-4 px-4">
+                    <div className="flex flex-col sm:flex-row items-center justify-center w-full gap-20 //px-4">
 
                         {/* quadrado branco */}
                         <div className="bg-white flex items-center shadow-lg rounded-md border border-[#b2b2b2] w-full sm:w-[500px] md:w-[650px] p-4 sm:p-8 md:p-14">

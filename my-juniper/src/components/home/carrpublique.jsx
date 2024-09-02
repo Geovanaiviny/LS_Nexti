@@ -4,13 +4,14 @@ import 'react-responsive-carousel/lib/styles/carousel.min.css';
 import Imacarrpubli from '../../assets/img/imacarrpubli.jpg';
 import { styled } from '@mui/material/styles';
 import Button from '@mui/material/Button';
+import { useNavigate } from "react-router-dom";
 
 const CarouselComponent = () => {
   const [currentIndex, setCurrentIndex] = useState(0);
 
   useEffect(() => {
     const interval = setInterval(() => {
-      setCurrentIndex((prevIndex) => (prevIndex + 1) % 4); // Adjusted for 4 slides
+      setCurrentIndex((prevIndex) => (prevIndex + 1) % 4); // Ajustado para 4 slides
     }, 6000);
     return () => clearInterval(interval);
   }, []);
@@ -20,6 +21,7 @@ const CarouselComponent = () => {
       img: Imacarrpubli,
       title: "Publique seu livro conosco",
       description: "Faça parte de uma comunidade apaixonada pela palavra escrita. Nossa equipe editorial está pronta para elevar seu trabalho a novos horizontes."
+      
     },
     {
       img: Imacarrpubli,
@@ -38,14 +40,13 @@ const CarouselComponent = () => {
     }
   ];
 
-
   const StyledButton = styled(Button)(({ theme }) => ({
-    height: '56px',
-    width: '160px',
+    height: '62px',
+    width: '220px',
     color: '#213E60',
     fontFamily: 'Poppins',
     fontWeight: '1000',
-    fontSize: '23px',
+    fontSize: '26px',
     borderRadius: '7px',
     textTransform: 'none',
     border: '4px solid #E68C3A',
@@ -55,8 +56,14 @@ const CarouselComponent = () => {
     },
   }));
 
+  const navigate = useNavigate();
+
+  const handleButtonClick = () => {
+    navigate('/chamaabert');
+  };
+
   return (
-    <div className="container mx-auto my-10">
+    <div className="container mx-auto py-10 //my-10">
       <Carousel
         selectedItem={currentIndex}
         showThumbs={false}
@@ -67,19 +74,19 @@ const CarouselComponent = () => {
       >
         {slides.map((slide, index) => (
           <div className="relative" key={index}>
-            <img className='h-[36rem] w-[400px]' src={slide.img} alt={`Carousel Slide ${index + 1}`} />
+            <img className="h-[36rem] w-full object-cover" src={slide.img} alt={`Carousel Slide ${index + 1}`} />
             <div className="absolute inset-0 bg-black bg-opacity-30 flex flex-col justify-center items-start p-10">
-              <h2 className="text-white font-robotoserif text-5xl font-bold">{slide.title}</h2>
-              <p className="text-white font-worksans text-[24px] font-medium max-w-[50%] whitespace-normal break-words">
+              <h2 className="text-white font-robotoserif text-5xl font-bold text-left">{slide.title}</h2>
+              <p className="text-white font-worksans text-[24px] font-medium text-left max-w-[50%] sm:max-w-full">
                 {slide.description}
               </p>
             </div>
           </div>
         ))}
       </Carousel>
-      <div className="min-h-1 mt-6 ml-14">
-            <StyledButton variant="samais">Saiba mais</StyledButton>
-            </div>
+      <div className="min-h-1 mt-14 flex justify-start">
+        <StyledButton variant="samais" onClick={handleButtonClick}>Saiba mais</StyledButton>
+      </div>
     </div>
   );
 };

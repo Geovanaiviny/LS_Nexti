@@ -33,7 +33,7 @@ export default function Qsomos(){
                 </h1>
             </div>
 
-            <div className="mt-32 mb-32 flex justify-center">
+            <div className=" w-full pb-20 mt-20  //mb-32 flex justify-center">
                 <div className="flex gap-8 //justify-around items-center bg-transparent shadow-[0_8px_40px_-15px_rgba(104,154,212,0.85)] border-[0.1px] rounded-md border-[#b2b2b2] w-[1200px] max-w-7xl h-[580px] max-h-screen">
                     <figure className=" mb-[460px] ml-16">
                         <img src={Lineicon}/>
@@ -60,7 +60,7 @@ export default function Qsomos(){
 
                  </div>
             </div>
-    </div>
+        </div>
 
 
         </>

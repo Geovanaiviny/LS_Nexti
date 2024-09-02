@@ -368,9 +368,9 @@ const Livro = ({ src, title, route }) => {
     const navigate = useNavigate();
 
     return (
-        <div className="bg-[#fafaf9] flex flex-col justify-center items-center shadow-[0_8px_10px_-7px_rgba(94,94,94,0.87)] border-[0.1px] rounded-md border-[#dfdfdf] w-[18%] h-[400px] max-h-screen gap-2">
+        <div className="bg-[#fafaf9] flex flex-col justify-center items-center shadow-[0_8px_10px_-7px_rgba(94,94,94,0.87)] border-[0.1px] rounded-md border-[#dfdfdf] w-[18%] max-w-[300px] h-[400px] max-h-screen gap-2">
             <div className="flex flex-col justify-center items-center w-[90%] h-[80%] gap-4">
-                <img className="w-[200px] h-[240px] rounded-md" src={src} alt={title} />
+                <img className="w-[90%] h-[80%]  //w-[200px] //h-[240px] rounded-md" src={src} alt={title} />
                 <h2 className="w-full font-worksans text-[18px] font-medium text-[#828282]">
                     {title}
                 </h2>
@@ -418,8 +418,8 @@ const Pagination = ({ totalPages, currentPage, onPageChange }) => {
     };
 
     return (
-        <div className="  w-full h-24">
-            <div className=" flex justify-center items-center space-x-2 rounded-full border border-gray-400 p-1 bg-gray-50 w-[50%] max-w-[30%] mx-auto mt-8">
+        <div className="w-full h-24">
+            <div className="flex justify-center items-center space-x-2 rounded-full border border-gray-400 p-1 bg-gray-50 w-[50%] max-w-[30%] mx-auto mt-8">
                 <button
                     className="px-4 py-2 border border-gray-400 text-gray-700 bg-white rounded-l-full"
                     onClick={() => onPageChange(currentPage - 1)}
@@ -471,12 +471,15 @@ export default function Estante() {
             </div>
 
             {/* Container principal */}
-            <div className="//bg-black flex flex-col items-center justify-center w-full h-auto mb-14">
+            <div className="flex flex-col items-center justify-center w-full h-auto mb-14">
                 {/* Quadrado branco */}
-                <div className="flex flex-col items-center justify-center bg-[#ffff] shadow-[0_8px_18px_-2px_rgba(104,154,212,0.85)] border-[0.1px] rounded-md border-[#dadada] w-[80%] h-auto p-10 //min-h-full mb-12 gap-10">
+                <div className="flex flex-col items-center justify-center bg-[#ffff] shadow-[0_8px_18px_-2px_rgba(104,154,212,0.85)] border-[0.1px] rounded-md border-[#dadada] w-[80%] h-auto p-10 mb-12 gap-10">
                     {/* Fileiras de livros */}
                     {[1, 2, 3, 4].map((_, index) => (
-                        <div key={index} className="w-full flex flex-wrap justify-center items-center gap-12">
+                        <div 
+                            key={index} 
+                            className="w-full flex flex-wrap justify-center items-center gap-12"
+                        >
                             <Livro src={Roboestan} title="Aspectos da engenharia robótica" route="/livro1/" />
                             <Livro src={Programaestan} title="Linguagens de programação" route={"/livro2"} />
                             <Livro src={Biomestante} title="Fundamentos da biomedicina" route="/livro3" />
@@ -490,6 +493,7 @@ export default function Estante() {
         </div>
     );
 }
+
 
 //             {/* Container principal */}
 //             <div className="//bg-black flex flex-col items-center justify-center w-full mb-14">
