@@ -21,6 +21,7 @@ import CodigoEtic from './pages/codigodeetica.jsx';
 import PerFrequentes from './pages/perguntasfrequentes.jsx';
 import PEditorial from './pages/politicaeditorial.jsx';
 import Pprivada from './pages/politicaprivada.jsx';
+import Servicos from './pages/Servicos.jsx';
 
 const router = createBrowserRouter([
   {
@@ -88,6 +89,10 @@ const router = createBrowserRouter([
       {
         path: 'poliprivada',
         element: <Pprivada/>,
+      },
+      {
+        path: 'servicos',
+        element: <Servicos/>
       },
     ],
   },
