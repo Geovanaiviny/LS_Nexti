@@ -1,8 +1,8 @@
 import React, { useState } from 'react';
 import Hcomum from "../assets/img/hcomum.png";
-import Roboestante from '../assets/img/roboestante.jpg';
-import Hpublin from '../assets/img/hpublin.png';
-import Prograestante from '../assets/img/prograestante.jpg';
+import Perguntasrespostas from "../assets/img/perguntasrespostas.png";
+import Perguntasrespostas2 from "../assets/img/perguntasrespostas2.png";
+
 import Header from "../components/header";
 import Footer from "../components/footer";
 import { QuestionAnswer } from "@mui/icons-material";
@@ -81,13 +81,13 @@ export default function Perguntasfrequentes() {
               ))}
             </div>
             {/* Imagem abaixo da Caixa de Perguntas e Respostas */}
-            <img src={Hpublin} alt="Robo Estante" style={{ width: '645px', height: '600px' }} className="w-full mb-6  " />
+            <img src={Perguntasrespostas2} alt="Robo Estante" style={{ width: '645px', height: '560px' }} className="w-full mb-6  " />
           </div>
 
           {/* Segunda Coluna */}
           <div className="w-full md:w-1/2">
             {/* Imagem ao lado da Caixa de Perguntas e Respostas */}
-            <img src={Prograestante} alt="Robo Estante" style={{ width: '645px', height: '700px' }} className="w-full mb-20  " />
+            <img src={Perguntasrespostas} alt="Robo Estante" style={{ width: '645px', height: '560px' }} className="w-full mb-20  " />
             {/* Caixa de Perguntas e Respostas abaixo da Imagem */}
             <div className="p-6 bg-white shadow-lg shadow-blue-300">
               {faqData.map((item, index) => (
